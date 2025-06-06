@@ -16,6 +16,7 @@ D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.pdb
 D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.xml
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbproj.AssemblyReference.cache
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.Form1.resources
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.Login.resources
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.MDIParent1.resources
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.Resources.resources
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbproj.GenerateResource.cache
@@ -23,3 +24,4 @@ D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbpr
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.exe
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.xml
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.pdb
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.RegisterPage.resources
