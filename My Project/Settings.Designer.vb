@@ -53,15 +53,15 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VI7KLC6\SQLEXPRESS;Initial Catalog=ApkDatabaseStocks;Integrat" &
-            "ed Security=True;TrustServerCertificate=True")>
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VI7KLC6\SQLEXPRESS;Initial Catalog=ApkDatabaseStocks;Integrat"& _ 
+            "ed Security=True;TrustServerCertificate=True")>  _
         Public ReadOnly Property ApkDatabaseStocks() As String
             Get
-                Return CType(Me("ApkDatabaseStocks"), String)
+                Return CType(Me("ApkDatabaseStocks"),String)
             End Get
         End Property
     End Class
