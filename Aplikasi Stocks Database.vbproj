@@ -81,10 +81,17 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="UI Database Stocks\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="UI Database Stocks\Login.vb">
+=======
+    <Compile Include="UI Database Stocks\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Database Stocks\Form2.vb">
+>>>>>>> b7d64fd71ffe29380c9590635c512ea148b64ecc
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI Database Stocks\MDIParent1.Designer.vb">
@@ -120,8 +127,13 @@
     <EmbeddedResource Include="UI Database Stocks\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="UI Database Stocks\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+=======
+    <EmbeddedResource Include="UI Database Stocks\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+>>>>>>> b7d64fd71ffe29380c9590635c512ea148b64ecc
     </EmbeddedResource>
     <EmbeddedResource Include="UI Database Stocks\MDIParent1.resx">
       <DependentUpon>MDIParent1.vb</DependentUpon>

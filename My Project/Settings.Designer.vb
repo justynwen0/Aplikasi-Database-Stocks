@@ -57,8 +57,12 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+<<<<<<< HEAD
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VI7KLC6\SQLEXPRESS;Initial Catalog=ApkDatabaseStocks;Integrat"& _ 
             "ed Security=True;TrustServerCertificate=True")>  _
+=======
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=June;Initial Catalog=ApkDatabaseStocks;Integrated Security=True")>  _
+>>>>>>> b7d64fd71ffe29380c9590635c512ea148b64ecc
         Public ReadOnly Property ApkDatabaseStocks() As String
             Get
                 Return CType(Me("ApkDatabaseStocks"),String)

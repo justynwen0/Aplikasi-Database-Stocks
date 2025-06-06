@@ -6,10 +6,10 @@ Public Class MDIParent1
         ' Create a new instance of the child form.
         Dim ChildForm As New System.Windows.Forms.Form
         ' Make it a child of this MDI form before showing it.
-        ChildForm.MdiParent = Me
+        'ChildForm.MdiParent = Me
 
-        m_ChildFormNumber += 1
-        ChildForm.Text = "Window " & m_ChildFormNumber
+        'm_ChildFormNumber += 1
+        'ChildForm.Text = "Window " & m_ChildFormNumber
 
         ChildForm.Show()
     End Sub
@@ -22,20 +22,25 @@ Public Class MDIParent1
         '    Dim FileName As String = OpenFileDialog.FileName
         '    ' TODO: Add code here to open the file.
         'End If
+<<<<<<< HEAD
 
         'Login.Show()
         RegisterPage.Show()
+=======
+        Form1.Show()
+>>>>>>> b7d64fd71ffe29380c9590635c512ea148b64ecc
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click
-        Dim SaveFileDialog As New SaveFileDialog
-        SaveFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
-        SaveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
+        'Dim SaveFileDialog As New SaveFileDialog
+        'SaveFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
+        'SaveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
 
-        If (SaveFileDialog.ShowDialog(Me) = System.Windows.Forms.DialogResult.OK) Then
-            Dim FileName As String = SaveFileDialog.FileName
-            ' TODO: Add code here to save the current contents of the form to a file.
-        End If
+        'If (SaveFileDialog.ShowDialog(Me) = System.Windows.Forms.DialogResult.OK) Then
+        '    Dim FileName As String = SaveFileDialog.FileName
+        '    ' TODO: Add code here to save the current contents of the form to a file.
+        'End If
+        Form1.Show()
     End Sub
 
 
