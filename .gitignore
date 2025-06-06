@@ -26,3 +26,60 @@ UpgradeLog*.htm
 # Sistem
 Thumbs.db
 Desktop.ini
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.vssscc
+*.vsscc
+*.ncb
+
+# Build results
+bin/
+obj/
+*.exe
+*.pdb
+*.dll
+*.cache
+*.log
+
+# Upgrade logs
+UpgradeLog*.htm
+
+# Test and Debug
+TestResults/
+*.mdb
+*.cachefile
+*.dbmdl
+
+# Config transforms
+*.[Dd]ebug.config
+*.[Rr]elease.config
+
+# Publish
+publish/
+
+# NuGet
+packages/
+*.nupkg
+
+# ReSharper or JetBrains
+_ReSharper*/
+.idea/
+*.sln.iml
+
+# System
+Thumbs.db
+Desktop.ini
+
+# Misc
+*.swp
+*.bak
+*.tmp
+*.~*
+
