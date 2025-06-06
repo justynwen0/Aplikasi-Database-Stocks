@@ -10,3 +10,16 @@ D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks D
 D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.exe
 D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.xml
 D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.pdb
+D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.exe.config
+D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.exe
+D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.pdb
+D:\Stock\VB App\Aplikasi-Database-Stocks\bin\Debug\Aplikasi Stocks Database.xml
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbproj.AssemblyReference.cache
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.Form1.resources
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.MDIParent1.resources
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi_Stocks_Database.Resources.resources
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbproj.GenerateResource.cache
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbproj.CoreCompileInputs.cache
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.exe
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.xml
+D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.pdb
