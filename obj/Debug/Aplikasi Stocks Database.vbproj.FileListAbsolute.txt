@@ -23,3 +23,5 @@ D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.vbpr
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.exe
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.xml
 D:\Stock\VB App\Aplikasi-Database-Stocks\obj\Debug\Aplikasi Stocks Database.pdb
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi_Stocks_Database.Form2.resources
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi_Stocks_Database.MDIParent1.resources
