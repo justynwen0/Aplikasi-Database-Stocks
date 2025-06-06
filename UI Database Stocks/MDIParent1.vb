@@ -22,13 +22,9 @@ Public Class MDIParent1
         '    Dim FileName As String = OpenFileDialog.FileName
         '    ' TODO: Add code here to open the file.
         'End If
-<<<<<<< HEAD
 
         'Login.Show()
         RegisterPage.Show()
-=======
-        Form1.Show()
->>>>>>> b7d64fd71ffe29380c9590635c512ea148b64ecc
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click
