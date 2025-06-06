@@ -1,0 +1,12 @@
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\bin\Debug\Aplikasi Stocks Database.exe.config
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\bin\Debug\Aplikasi Stocks Database.exe
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\bin\Debug\Aplikasi Stocks Database.pdb
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\bin\Debug\Aplikasi Stocks Database.xml
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.vbproj.AssemblyReference.cache
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi_Stocks_Database.Form1.resources
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi_Stocks_Database.Resources.resources
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.vbproj.GenerateResource.cache
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.vbproj.CoreCompileInputs.cache
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.exe
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.xml
+D:\Aplikasi Database Stocks\Aplikasi Stocks Database\obj\Debug\Aplikasi Stocks Database.pdb
