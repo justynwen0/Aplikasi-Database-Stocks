@@ -32,14 +32,18 @@ Partial Class Suppliers
         Me.btnUPDATE = New System.Windows.Forms.Button()
         Me.btnDELETE = New System.Windows.Forms.Button()
         Me.btnCANCEL = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.dgvSUPPLIERS = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvSUPPLIERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnINSERT
         '
         Me.btnINSERT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnINSERT.Location = New System.Drawing.Point(35, 140)
+        Me.btnINSERT.Location = New System.Drawing.Point(43, 460)
         Me.btnINSERT.Name = "btnINSERT"
-        Me.btnINSERT.Size = New System.Drawing.Size(75, 23)
+        Me.btnINSERT.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERT.TabIndex = 0
         Me.btnINSERT.Text = "&INSERT"
         Me.btnINSERT.UseVisualStyleBackColor = True
@@ -48,7 +52,7 @@ Partial Class Suppliers
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 23)
+        Me.Label1.Location = New System.Drawing.Point(12, 338)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 20)
         Me.Label1.TabIndex = 1
@@ -57,16 +61,16 @@ Partial Class Suppliers
         'txtNAMA
         '
         Me.txtNAMA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNAMA.Location = New System.Drawing.Point(122, 23)
+        Me.txtNAMA.Location = New System.Drawing.Point(154, 338)
         Me.txtNAMA.Name = "txtNAMA"
-        Me.txtNAMA.Size = New System.Drawing.Size(232, 22)
+        Me.txtNAMA.Size = New System.Drawing.Size(167, 22)
         Me.txtNAMA.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(25, 63)
+        Me.Label2.Location = New System.Drawing.Point(12, 371)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 20)
         Me.Label2.TabIndex = 3
@@ -76,7 +80,7 @@ Partial Class Suppliers
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(25, 103)
+        Me.Label3.Location = New System.Drawing.Point(12, 411)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 20)
         Me.Label3.TabIndex = 4
@@ -85,51 +89,82 @@ Partial Class Suppliers
         'txtNOTELP
         '
         Me.txtNOTELP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNOTELP.Location = New System.Drawing.Point(122, 63)
+        Me.txtNOTELP.Location = New System.Drawing.Point(154, 371)
         Me.txtNOTELP.Name = "txtNOTELP"
-        Me.txtNOTELP.Size = New System.Drawing.Size(232, 22)
+        Me.txtNOTELP.Size = New System.Drawing.Size(167, 22)
         Me.txtNOTELP.TabIndex = 5
         '
         'txtEMAIL
         '
         Me.txtEMAIL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEMAIL.Location = New System.Drawing.Point(122, 103)
+        Me.txtEMAIL.Location = New System.Drawing.Point(154, 411)
         Me.txtEMAIL.Name = "txtEMAIL"
-        Me.txtEMAIL.Size = New System.Drawing.Size(232, 22)
+        Me.txtEMAIL.Size = New System.Drawing.Size(167, 22)
         Me.txtEMAIL.TabIndex = 6
         '
         'btnUPDATE
         '
-        Me.btnUPDATE.Location = New System.Drawing.Point(116, 140)
+        Me.btnUPDATE.Location = New System.Drawing.Point(114, 460)
         Me.btnUPDATE.Name = "btnUPDATE"
-        Me.btnUPDATE.Size = New System.Drawing.Size(75, 23)
+        Me.btnUPDATE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATE.TabIndex = 7
         Me.btnUPDATE.Text = "&UPDATE"
         Me.btnUPDATE.UseVisualStyleBackColor = True
         '
         'btnDELETE
         '
-        Me.btnDELETE.Location = New System.Drawing.Point(198, 140)
+        Me.btnDELETE.Location = New System.Drawing.Point(185, 460)
         Me.btnDELETE.Name = "btnDELETE"
-        Me.btnDELETE.Size = New System.Drawing.Size(75, 23)
+        Me.btnDELETE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETE.TabIndex = 8
         Me.btnDELETE.Text = "&DELETE"
         Me.btnDELETE.UseVisualStyleBackColor = True
         '
         'btnCANCEL
         '
-        Me.btnCANCEL.Location = New System.Drawing.Point(279, 140)
+        Me.btnCANCEL.Location = New System.Drawing.Point(256, 460)
         Me.btnCANCEL.Name = "btnCANCEL"
-        Me.btnCANCEL.Size = New System.Drawing.Size(75, 23)
+        Me.btnCANCEL.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCEL.TabIndex = 9
         Me.btnCANCEL.Text = "&CANCEL"
         Me.btnCANCEL.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(267, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(136, 31)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Suppliers"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(12, 52)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(128, 20)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "List Suppliers :"
+        '
+        'dgvSUPPLIERS
+        '
+        Me.dgvSUPPLIERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSUPPLIERS.Location = New System.Drawing.Point(9, 75)
+        Me.dgvSUPPLIERS.Name = "dgvSUPPLIERS"
+        Me.dgvSUPPLIERS.Size = New System.Drawing.Size(618, 257)
+        Me.dgvSUPPLIERS.TabIndex = 12
         '
         'Suppliers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(377, 175)
+        Me.ClientSize = New System.Drawing.Size(639, 495)
+        Me.Controls.Add(Me.dgvSUPPLIERS)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnCANCEL)
         Me.Controls.Add(Me.btnDELETE)
         Me.Controls.Add(Me.btnUPDATE)
@@ -142,7 +177,8 @@ Partial Class Suppliers
         Me.Controls.Add(Me.btnINSERT)
         Me.Name = "Suppliers"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Suppliers"
+        Me.Text = "Info Suppliers"
+        CType(Me.dgvSUPPLIERS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,4 +194,7 @@ Partial Class Suppliers
     Friend WithEvents btnUPDATE As Button
     Friend WithEvents btnDELETE As Button
     Friend WithEvents btnCANCEL As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents dgvSUPPLIERS As DataGridView
 End Class

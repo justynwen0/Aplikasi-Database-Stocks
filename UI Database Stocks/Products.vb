@@ -55,6 +55,13 @@ Public Class Products
             Exit Sub
         End If
 
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin memperbaharui barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If konfirmasi = DialogResult.No Then
+            conn.Close()
+            Exit Sub
+        End If
+
+
         ' Jika ada, lakukan update
         sql = "UPDATE Products SET NamaBarang = @nama, Harga = @harga, MerekBarang = @merek WHERE NamaBarang = @nama"
         With cmd
@@ -93,6 +100,12 @@ Public Class Products
             txtHARGA.Clear()
             txtMEREKBARANG.Clear()
             txtNAMABARANG.Focus()
+            Exit Sub
+        End If
+
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menghapus barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If konfirmasi = DialogResult.No Then
+            conn.Close()
             Exit Sub
         End If
 
@@ -164,6 +177,12 @@ Public Class Products
             txtHARGA.Clear()
             txtMEREKBARANG.Clear()
             txtNAMABARANG.Focus()
+            Exit Sub
+        End If
+
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menambahkan barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If konfirmasi = DialogResult.No Then
+            conn.Close()
             Exit Sub
         End If
 
