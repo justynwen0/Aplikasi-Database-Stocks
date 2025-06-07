@@ -26,6 +26,7 @@ Public Class MDIParent1
         'Login.Show()
         'RegisterPage.Show()
         Products.Show()
+        'Suppliers.Show()
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click
@@ -88,8 +89,4 @@ Public Class MDIParent1
     End Sub
 
     Private m_ChildFormNumber As Integer
-
-    Private Sub MDIParent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

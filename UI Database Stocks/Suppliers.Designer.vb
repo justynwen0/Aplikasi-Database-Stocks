@@ -22,16 +22,140 @@ Partial Class Suppliers
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnINSERT = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtNAMA = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtNOTELP = New System.Windows.Forms.TextBox()
+        Me.txtEMAIL = New System.Windows.Forms.TextBox()
+        Me.btnUPDATE = New System.Windows.Forms.Button()
+        Me.btnDELETE = New System.Windows.Forms.Button()
+        Me.btnCANCEL = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnINSERT
+        '
+        Me.btnINSERT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnINSERT.Location = New System.Drawing.Point(35, 140)
+        Me.btnINSERT.Name = "btnINSERT"
+        Me.btnINSERT.Size = New System.Drawing.Size(75, 23)
+        Me.btnINSERT.TabIndex = 0
+        Me.btnINSERT.Text = "&INSERT"
+        Me.btnINSERT.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 23)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 20)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Nama :"
+        '
+        'txtNAMA
+        '
+        Me.txtNAMA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNAMA.Location = New System.Drawing.Point(122, 23)
+        Me.txtNAMA.Name = "txtNAMA"
+        Me.txtNAMA.Size = New System.Drawing.Size(232, 22)
+        Me.txtNAMA.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(25, 63)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "No. Telp :"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(25, 103)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 20)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Email :"
+        '
+        'txtNOTELP
+        '
+        Me.txtNOTELP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNOTELP.Location = New System.Drawing.Point(122, 63)
+        Me.txtNOTELP.Name = "txtNOTELP"
+        Me.txtNOTELP.Size = New System.Drawing.Size(232, 22)
+        Me.txtNOTELP.TabIndex = 5
+        '
+        'txtEMAIL
+        '
+        Me.txtEMAIL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEMAIL.Location = New System.Drawing.Point(122, 103)
+        Me.txtEMAIL.Name = "txtEMAIL"
+        Me.txtEMAIL.Size = New System.Drawing.Size(232, 22)
+        Me.txtEMAIL.TabIndex = 6
+        '
+        'btnUPDATE
+        '
+        Me.btnUPDATE.Location = New System.Drawing.Point(116, 140)
+        Me.btnUPDATE.Name = "btnUPDATE"
+        Me.btnUPDATE.Size = New System.Drawing.Size(75, 23)
+        Me.btnUPDATE.TabIndex = 7
+        Me.btnUPDATE.Text = "&UPDATE"
+        Me.btnUPDATE.UseVisualStyleBackColor = True
+        '
+        'btnDELETE
+        '
+        Me.btnDELETE.Location = New System.Drawing.Point(198, 140)
+        Me.btnDELETE.Name = "btnDELETE"
+        Me.btnDELETE.Size = New System.Drawing.Size(75, 23)
+        Me.btnDELETE.TabIndex = 8
+        Me.btnDELETE.Text = "&DELETE"
+        Me.btnDELETE.UseVisualStyleBackColor = True
+        '
+        'btnCANCEL
+        '
+        Me.btnCANCEL.Location = New System.Drawing.Point(279, 140)
+        Me.btnCANCEL.Name = "btnCANCEL"
+        Me.btnCANCEL.Size = New System.Drawing.Size(75, 23)
+        Me.btnCANCEL.TabIndex = 9
+        Me.btnCANCEL.Text = "&CANCEL"
+        Me.btnCANCEL.UseVisualStyleBackColor = True
         '
         'Suppliers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(458, 283)
+        Me.ClientSize = New System.Drawing.Size(377, 175)
+        Me.Controls.Add(Me.btnCANCEL)
+        Me.Controls.Add(Me.btnDELETE)
+        Me.Controls.Add(Me.btnUPDATE)
+        Me.Controls.Add(Me.txtEMAIL)
+        Me.Controls.Add(Me.txtNOTELP)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtNAMA)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnINSERT)
         Me.Name = "Suppliers"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Suppliers"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents btnINSERT As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtNAMA As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtNOTELP As TextBox
+    Friend WithEvents txtEMAIL As TextBox
+    Friend WithEvents btnUPDATE As Button
+    Friend WithEvents btnDELETE As Button
+    Friend WithEvents btnCANCEL As Button
 End Class
