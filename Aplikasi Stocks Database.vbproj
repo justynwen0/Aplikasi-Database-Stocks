@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4D4F9B65-B4B9-4E51-849F-182D7BB2E8F3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Aplikasi_Stocks_Database.My.MyApplication</StartupObject>
+    <StartupObject>Aplikasi_Stocks_Database.login</StartupObject>
     <RootNamespace>Aplikasi_Stocks_Database</RootNamespace>
     <AssemblyName>Aplikasi Stocks Database</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -146,8 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
-      <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <!--<Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>-->
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
