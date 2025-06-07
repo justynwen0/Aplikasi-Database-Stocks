@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
 
@@ -80,5 +81,16 @@ Public Class DatabaseHelper
             Next
             Return sb.ToString()
         End Using
+    End Function
+
+    Public Shared Function GetConnectionString() As String
+        Dim envPath As String = Path.Combine(Application.StartupPath, "dbconfig.env")
+
+        If File.Exists(envPath) Then
+            Return File.ReadAllText(envPath).Trim()
+        Else
+            MessageBox.Show("File koneksi 'dbconfig.env' tidak ditemukan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return ""
+        End If
     End Function
 End Class

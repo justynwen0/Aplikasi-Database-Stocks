@@ -5,7 +5,7 @@ Imports System.Text
 Public Class Login
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim hashedPassword As String = DatabaseHelper.GetSHA256Hash(txtPassword.Text)
-        Dim connString As String = My.MySettings.Default.ApkDatabaseStocks
+        Dim connString As String = DatabaseHelper.GetConnectionString()
 
         Try
             Dim data = New Dictionary(Of String, Object) From {

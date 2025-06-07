@@ -25,14 +25,24 @@ Partial Class MDIParent1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnProductsMDI = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnProductsMDI
+        '
+        Me.btnProductsMDI.Location = New System.Drawing.Point(64, 51)
+        Me.btnProductsMDI.Name = "btnProductsMDI"
+        Me.btnProductsMDI.Size = New System.Drawing.Size(75, 23)
+        Me.btnProductsMDI.TabIndex = 9
+        Me.btnProductsMDI.Text = "Products"
+        Me.btnProductsMDI.UseVisualStyleBackColor = True
         '
         'MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(945, 445)
-        Me.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Controls.Add(Me.btnProductsMDI)
         Me.IsMdiContainer = True
         Me.Name = "MDIParent1"
         Me.Text = "MDIParent1"
@@ -40,4 +50,5 @@ Partial Class MDIParent1
 
     End Sub
     Friend WithEvents ToolTip As ToolTip
+    Friend WithEvents btnProductsMDI As Button
 End Class
