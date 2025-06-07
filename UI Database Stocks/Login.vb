@@ -9,21 +9,20 @@ Public Class Login
 
         Try
             Dim data = New Dictionary(Of String, Object) From {
-                {"email", Trim(txtEmail.Text)},
+                {"nama", Trim(txtUsername.Text)},
                 {"pass", hashedPassword}
             }
 
             Dim resultTable As DataTable = DatabaseHelper.ExecuteDynamicSQL(
-                "select", "Users", data, connString, "Email = @email AND Password = @pass", New List(Of String) From {"ID", "Nama", "Email"}
+                "select", "Users", data, connString, "Nama = @nama AND Password = @pass", New List(Of String) From {"ID", "Nama", "Email"}
             )
             If resultTable.Rows.Count > 0 Then
                 Products.Show()
             Else
-                MessageBox.Show("Email atau Password salah.")
+                MessageBox.Show("Username atau Password salah.")
             End If
         Catch ex As Exception
             MessageBox.Show("Terjadi kesalahan: " & ex.Message)
         End Try
     End Sub
-
 End Class

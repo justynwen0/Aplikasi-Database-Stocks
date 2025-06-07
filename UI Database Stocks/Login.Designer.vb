@@ -24,7 +24,7 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.lblEmail = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -37,9 +37,9 @@ Partial Class Login
         Me.lblEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lblEmail.Location = New System.Drawing.Point(182, 171)
         Me.lblEmail.Name = "lblEmail"
-        Me.lblEmail.Size = New System.Drawing.Size(86, 29)
+        Me.lblEmail.Size = New System.Drawing.Size(136, 29)
         Me.lblEmail.TabIndex = 0
-        Me.lblEmail.Text = "Email :"
+        Me.lblEmail.Text = "Username :"
         '
         'Label2
         '
@@ -52,13 +52,13 @@ Partial Class Login
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Password :"
         '
-        'txtEmail
+        'txtUsername
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(324, 171)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(295, 31)
-        Me.txtEmail.TabIndex = 2
+        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(324, 171)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(295, 31)
+        Me.txtUsername.TabIndex = 2
         '
         'txtPassword
         '
@@ -98,7 +98,7 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblEmail)
         Me.Name = "Login"
@@ -111,7 +111,7 @@ Partial Class Login
 
     Friend WithEvents lblEmail As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents Label3 As Label
