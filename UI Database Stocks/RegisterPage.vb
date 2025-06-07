@@ -15,7 +15,7 @@ Public Class RegisterPage
         Try
             Dim rowsAffected As Integer = dbHelper.ExecuteDynamicSQL("insert", "Users", data, connString)
             If rowsAffected > 0 Then
-                MessageBox.Show("Registrasi berhasil!")
+                MessageBox.Show("Registrasi berhasil")
             Else
                 MessageBox.Show("Registrasi gagal!")
             End If

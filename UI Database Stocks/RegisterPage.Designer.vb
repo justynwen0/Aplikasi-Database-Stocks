@@ -58,7 +58,7 @@ Partial Class RegisterPage
         'BtnRegister
         '
         Me.BtnRegister.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegister.Location = New System.Drawing.Point(312, 297)
+        Me.BtnRegister.Location = New System.Drawing.Point(312, 296)
         Me.BtnRegister.Name = "BtnRegister"
         Me.BtnRegister.Size = New System.Drawing.Size(142, 55)
         Me.BtnRegister.TabIndex = 10

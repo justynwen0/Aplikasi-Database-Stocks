@@ -23,8 +23,8 @@ Public Class MDIParent1
         '    ' TODO: Add code here to open the file.
         'End If
 
-        'Login.Show()
-        RegisterPage.Show()
+        Login.Show()
+        'RegisterPage.Show()
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click

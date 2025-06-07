@@ -54,4 +54,16 @@ Public Class DatabaseHelper
             Return BitConverter.ToString(hashBytes).Replace("-", "").ToLower()
         End Using
     End Function
+
+    Public Function GetSHA256Hash(ByVal text As String) As String
+        Using sha256 As SHA256 = SHA256.Create()
+            Dim bytes As Byte() = Encoding.UTF8.GetBytes(text)
+            Dim hash As Byte() = sha256.ComputeHash(bytes)
+            Dim sb As New StringBuilder()
+            For Each b As Byte In hash
+                sb.Append(b.ToString("x2"))
+            Next
+            Return sb.ToString()
+        End Using
+    End Function
 End Class
