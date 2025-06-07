@@ -8,7 +8,7 @@ Public Class Suppliers
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
 
         ' Validasi field wajib diisi
         If String.IsNullOrEmpty(txtNAMA.Text) OrElse
@@ -73,7 +73,7 @@ Public Class Suppliers
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
 
         ' Validasi: semua field wajib diisi
         If String.IsNullOrEmpty(txtNAMA.Text) OrElse
@@ -121,7 +121,7 @@ Public Class Suppliers
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
         conn.Open()
 
         ' Cek apakah data ada

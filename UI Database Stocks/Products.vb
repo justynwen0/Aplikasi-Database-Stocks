@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class Products
     Private Sub LoadData()
-        Dim conn As New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
         Dim sql As String = "SELECT * FROM Products"
         Dim adapter As New SqlDataAdapter(sql, conn)
         Dim dt As New DataTable()
@@ -27,7 +27,7 @@ Public Class Products
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
         ' Validasi: semua field wajib diisi
         If String.IsNullOrEmpty(txtNAMABARANG.Text) OrElse
             String.IsNullOrEmpty(txtHARGA.Text) OrElse
@@ -75,7 +75,7 @@ Public Class Products
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
         conn.Open()
 
         ' Cek apakah data ada
@@ -125,7 +125,7 @@ Public Class Products
         Dim conn As New SqlConnection
         Dim sql As String
         Dim cmd As New SqlCommand
-        conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
+        conn = New SqlConnection(DatabaseHelper.GetConnectionString())
 
         ' Validasi field wajib diisi
         If String.IsNullOrEmpty(txtNAMABARANG.Text) OrElse

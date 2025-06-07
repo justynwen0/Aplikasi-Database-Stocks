@@ -2,7 +2,7 @@
 
 Public Class RegisterPage
     Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
-        Dim connString As String = My.MySettings.Default.ApkDatabaseStocks
+        Dim connString As String = DatabaseHelper.GetConnectionString()
 
         Dim hashedPassword As String = DatabaseHelper.HashPassword(Trim(txtPasswordRegister.Text))
 
