@@ -88,7 +88,7 @@ Partial Class MDIParent1
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(625, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(588, 24)
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
         '
@@ -373,7 +373,7 @@ Partial Class MDIParent1
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.ToolStripSeparator1, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton, Me.ToolStripSeparator2, Me.HelpToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(625, 25)
+        Me.ToolStrip.Size = New System.Drawing.Size(588, 25)
         Me.ToolStrip.TabIndex = 6
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -444,9 +444,9 @@ Partial Class MDIParent1
         'StatusStrip
         '
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
-        Me.StatusStrip.Location = New System.Drawing.Point(0, 258)
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 251)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(625, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(588, 22)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -460,7 +460,7 @@ Partial Class MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(625, 280)
+        Me.ClientSize = New System.Drawing.Size(588, 273)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)

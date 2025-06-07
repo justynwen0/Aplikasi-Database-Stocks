@@ -24,7 +24,8 @@ Public Class MDIParent1
         'End If
 
         'Login.Show()
-        RegisterPage.Show()
+        'RegisterPage.Show()
+        Products.Show()
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click
@@ -36,7 +37,6 @@ Public Class MDIParent1
         '    Dim FileName As String = SaveFileDialog.FileName
         '    ' TODO: Add code here to save the current contents of the form to a file.
         'End If
-        Form1.Show()
     End Sub
 
 
@@ -89,4 +89,7 @@ Public Class MDIParent1
 
     Private m_ChildFormNumber As Integer
 
+    Private Sub MDIParent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
