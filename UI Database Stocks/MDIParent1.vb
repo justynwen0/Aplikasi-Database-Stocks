@@ -25,8 +25,6 @@ Public Class MDIParent1
 
         Login.Show()
         'RegisterPage.Show()
-        'Login.Show()
-        'RegisterPage.Show()
     End Sub
 
     Private Sub SaveAsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SaveAsToolStripMenuItem.Click

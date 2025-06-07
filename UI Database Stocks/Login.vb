@@ -4,29 +4,23 @@ Imports System.Text
 
 Public Class Login
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim dbHelper As New DatabaseHelper()
-        Dim username As String = txtUsername.Text
-        Dim password As String = txtPassword.Text
-        Dim hashedPassword As String = dbHelper.GetSHA256Hash(password)
-        Dim Conn As New SqlConnection
+        Dim hashedPassword As String = DatabaseHelper.GetSHA256Hash(txtPassword.Text)
+        Dim connString As String = My.MySettings.Default.ApkDatabaseStocks
 
         Try
-            Conn = New SqlConnection(My.MySettings.Default.ApkDatabaseStocks)
-            Conn.Open()
-            Dim cmd As New SqlCommand("SELECT * FROM Users WHERE Nama = @nama AND Password = @pass", Conn)
-            cmd.Parameters.AddWithValue("@nama", username)
-            cmd.Parameters.AddWithValue("@pass", hashedPassword)
+            Dim data = New Dictionary(Of String, Object) From {
+                {"email", Trim(txtEmail.Text)},
+                {"pass", hashedPassword}
+            }
 
-            Dim reader As SqlDataReader = cmd.ExecuteReader()
-
-            If reader.HasRows Then
-                Form1.Show()
+            Dim resultTable As DataTable = DatabaseHelper.ExecuteDynamicSQL(
+                "select", "Users", data, connString, "Email = @email AND Password = @pass", New List(Of String) From {"ID", "Nama", "Email"}
+            )
+            If resultTable.Rows.Count > 0 Then
+                Products.Show()
             Else
-                MessageBox.Show("Username atau Password salah.")
+                MessageBox.Show("Email atau Password salah.")
             End If
-
-            reader.Close()
-            Conn.Close()
         Catch ex As Exception
             MessageBox.Show("Terjadi kesalahan: " & ex.Message)
         End Try

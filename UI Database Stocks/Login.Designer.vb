@@ -22,24 +22,24 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblEmail = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblEmail
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(182, 171)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 29)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Username :"
+        Me.lblEmail.AutoSize = True
+        Me.lblEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblEmail.Location = New System.Drawing.Point(182, 171)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(86, 29)
+        Me.lblEmail.TabIndex = 0
+        Me.lblEmail.Text = "Email :"
         '
         'Label2
         '
@@ -52,13 +52,13 @@ Partial Class Login
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Password :"
         '
-        'txtUsername
+        'txtEmail
         '
-        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(324, 171)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(295, 31)
-        Me.txtUsername.TabIndex = 2
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(324, 171)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(295, 31)
+        Me.txtEmail.TabIndex = 2
         '
         'txtPassword
         '
@@ -98,9 +98,9 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblEmail)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login "
@@ -109,9 +109,9 @@ Partial Class Login
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblEmail As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents Label3 As Label
