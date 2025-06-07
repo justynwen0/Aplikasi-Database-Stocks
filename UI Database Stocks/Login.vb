@@ -17,12 +17,16 @@ Public Class Login
                 "select", "Users", data, connString, "Nama = @nama AND Password = @pass", New List(Of String) From {"ID", "Nama", "Email"}
             )
             If resultTable.Rows.Count > 0 Then
-                Products.Show()
+                MDIParent1.Show()
             Else
                 MessageBox.Show("Username atau Password salah.")
             End If
         Catch ex As Exception
             MessageBox.Show("Terjadi kesalahan: " & ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnLoginRegister_Click(sender As Object, e As EventArgs)
+        RegisterPage.Show()
     End Sub
 End Class
