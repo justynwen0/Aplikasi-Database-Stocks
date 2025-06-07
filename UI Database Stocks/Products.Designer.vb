@@ -58,7 +58,7 @@ Partial Class Products
         '
         'btnUPDATE
         '
-        Me.btnUPDATE.Location = New System.Drawing.Point(105, 462)
+        Me.btnUPDATE.Location = New System.Drawing.Point(115, 462)
         Me.btnUPDATE.Name = "btnUPDATE"
         Me.btnUPDATE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATE.TabIndex = 2
@@ -118,7 +118,7 @@ Partial Class Products
         '
         'btnDELETE
         '
-        Me.btnDELETE.Location = New System.Drawing.Point(176, 462)
+        Me.btnDELETE.Location = New System.Drawing.Point(196, 462)
         Me.btnDELETE.Name = "btnDELETE"
         Me.btnDELETE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETE.TabIndex = 9
@@ -127,7 +127,7 @@ Partial Class Products
         '
         'btnCANCEL
         '
-        Me.btnCANCEL.Location = New System.Drawing.Point(247, 462)
+        Me.btnCANCEL.Location = New System.Drawing.Point(277, 462)
         Me.btnCANCEL.Name = "btnCANCEL"
         Me.btnCANCEL.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCEL.TabIndex = 10
@@ -172,7 +172,7 @@ Partial Class Products
         Me.Controls.Add(Me.dgvPRODUCTS)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Products"
-        Me.Text = "InfoTentangProducts"
+        Me.Text = "Info Tentang Products"
         CType(Me.dgvPRODUCTS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

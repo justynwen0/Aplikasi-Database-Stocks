@@ -6,7 +6,6 @@ Public Class Login
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim hashedPassword As String = DatabaseHelper.GetSHA256Hash(txtPassword.Text)
         Dim connString As String = DatabaseHelper.GetConnectionString()
-
         Try
             Dim data = New Dictionary(Of String, Object) From {
                 {"nama", Trim(txtUsername.Text)},
@@ -26,7 +25,7 @@ Public Class Login
         End Try
     End Sub
 
-    Private Sub btnLoginRegister_Click(sender As Object, e As EventArgs)
-        RegisterPage.Show()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
