@@ -50,9 +50,9 @@ Partial Class Customers
         '
         'btnINSERTCUSTOMERS
         '
-        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(10, 462)
+        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(34, 462)
         Me.btnINSERTCUSTOMERS.Name = "btnINSERTCUSTOMERS"
-        Me.btnINSERTCUSTOMERS.Size = New System.Drawing.Size(75, 23)
+        Me.btnINSERTCUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERTCUSTOMERS.TabIndex = 1
         Me.btnINSERTCUSTOMERS.Text = "&INSERT"
         Me.btnINSERTCUSTOMERS.UseVisualStyleBackColor = True
@@ -114,27 +114,27 @@ Partial Class Customers
         '
         'btnUPDATECUSTOMERS
         '
-        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(91, 462)
+        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(105, 462)
         Me.btnUPDATECUSTOMERS.Name = "btnUPDATECUSTOMERS"
-        Me.btnUPDATECUSTOMERS.Size = New System.Drawing.Size(75, 23)
+        Me.btnUPDATECUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATECUSTOMERS.TabIndex = 8
         Me.btnUPDATECUSTOMERS.Text = "&UPDATE"
         Me.btnUPDATECUSTOMERS.UseVisualStyleBackColor = True
         '
         'btnDELETECUSTOMERS
         '
-        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(172, 462)
+        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(176, 462)
         Me.btnDELETECUSTOMERS.Name = "btnDELETECUSTOMERS"
-        Me.btnDELETECUSTOMERS.Size = New System.Drawing.Size(75, 23)
+        Me.btnDELETECUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETECUSTOMERS.TabIndex = 9
         Me.btnDELETECUSTOMERS.Text = "&DELETE"
         Me.btnDELETECUSTOMERS.UseVisualStyleBackColor = True
         '
         'btnCANCELCUSTOMERS
         '
-        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(253, 462)
+        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(247, 462)
         Me.btnCANCELCUSTOMERS.Name = "btnCANCELCUSTOMERS"
-        Me.btnCANCELCUSTOMERS.Size = New System.Drawing.Size(75, 23)
+        Me.btnCANCELCUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCELCUSTOMERS.TabIndex = 10
         Me.btnCANCELCUSTOMERS.Text = "&CANCEL"
         Me.btnCANCELCUSTOMERS.UseVisualStyleBackColor = True
@@ -157,7 +157,7 @@ Partial Class Customers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 495)
+        Me.ClientSize = New System.Drawing.Size(649, 495)
         Me.Controls.Add(Me.txtEMAILCUSTOMERS)
         Me.Controls.Add(Me.txtNOMORTELEPONCUSTOMERS)
         Me.Controls.Add(Me.btnCANCELCUSTOMERS)
