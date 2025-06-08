@@ -23,9 +23,9 @@ Partial Class Orders
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.cmbCUSTOMERS = New System.Windows.Forms.ComboBox()
+        Me.dtpORDERS = New System.Windows.Forms.DateTimePicker()
+        Me.txtQUANTITY = New System.Windows.Forms.TextBox()
         Me.btnINSERTORDERS = New System.Windows.Forms.Button()
         Me.dgvORDERS = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -33,11 +33,11 @@ Partial Class Orders
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbPRODUCTS = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtHARGASATUAN = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtHARGA = New System.Windows.Forms.TextBox()
         Me.btnUPDATEORDERS = New System.Windows.Forms.Button()
         Me.btnDELETEORDERS = New System.Windows.Forms.Button()
         Me.btnCANCELORDERS = New System.Windows.Forms.Button()
@@ -54,27 +54,27 @@ Partial Class Orders
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Orders"
         '
-        'ComboBox1
+        'cmbCUSTOMERS
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(152, 351)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.cmbCUSTOMERS.FormattingEnabled = True
+        Me.cmbCUSTOMERS.Location = New System.Drawing.Point(152, 351)
+        Me.cmbCUSTOMERS.Name = "cmbCUSTOMERS"
+        Me.cmbCUSTOMERS.Size = New System.Drawing.Size(200, 21)
+        Me.cmbCUSTOMERS.TabIndex = 1
         '
-        'DateTimePicker1
+        'dtpORDERS
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(152, 419)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 2
+        Me.dtpORDERS.Location = New System.Drawing.Point(152, 419)
+        Me.dtpORDERS.Name = "dtpORDERS"
+        Me.dtpORDERS.Size = New System.Drawing.Size(200, 20)
+        Me.dtpORDERS.TabIndex = 2
         '
-        'TextBox1
+        'txtQUANTITY
         '
-        Me.TextBox1.Location = New System.Drawing.Point(152, 456)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtQUANTITY.Location = New System.Drawing.Point(152, 459)
+        Me.txtQUANTITY.Name = "txtQUANTITY"
+        Me.txtQUANTITY.Size = New System.Drawing.Size(200, 20)
+        Me.txtQUANTITY.TabIndex = 3
         '
         'btnINSERTORDERS
         '
@@ -137,53 +137,53 @@ Partial Class Orders
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(8, 456)
+        Me.Label6.Location = New System.Drawing.Point(8, 526)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(68, 20)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Harga :"
         '
-        'ComboBox2
+        'cmbPRODUCTS
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(152, 385)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(200, 21)
-        Me.ComboBox2.TabIndex = 11
+        Me.cmbPRODUCTS.FormattingEnabled = True
+        Me.cmbPRODUCTS.Location = New System.Drawing.Point(152, 385)
+        Me.cmbPRODUCTS.Name = "cmbPRODUCTS"
+        Me.cmbPRODUCTS.Size = New System.Drawing.Size(200, 21)
+        Me.cmbPRODUCTS.TabIndex = 11
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(8, 493)
+        Me.Label7.Location = New System.Drawing.Point(8, 459)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(86, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Quantity :"
         '
-        'TextBox2
+        'txtHARGASATUAN
         '
-        Me.TextBox2.Location = New System.Drawing.Point(152, 493)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox2.TabIndex = 13
+        Me.txtHARGASATUAN.Location = New System.Drawing.Point(152, 491)
+        Me.txtHARGASATUAN.Name = "txtHARGASATUAN"
+        Me.txtHARGASATUAN.Size = New System.Drawing.Size(200, 20)
+        Me.txtHARGASATUAN.TabIndex = 13
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(8, 525)
+        Me.Label8.Location = New System.Drawing.Point(8, 491)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(131, 20)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Harga Satuan :"
         '
-        'TextBox3
+        'txtHARGA
         '
-        Me.TextBox3.Location = New System.Drawing.Point(152, 525)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox3.TabIndex = 15
+        Me.txtHARGA.Location = New System.Drawing.Point(152, 526)
+        Me.txtHARGA.Name = "txtHARGA"
+        Me.txtHARGA.Size = New System.Drawing.Size(200, 20)
+        Me.txtHARGA.TabIndex = 15
         '
         'btnUPDATEORDERS
         '
@@ -220,11 +220,11 @@ Partial Class Orders
         Me.Controls.Add(Me.btnCANCELORDERS)
         Me.Controls.Add(Me.btnDELETEORDERS)
         Me.Controls.Add(Me.btnUPDATEORDERS)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtHARGA)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtHARGASATUAN)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmbPRODUCTS)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -232,9 +232,9 @@ Partial Class Orders
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvORDERS)
         Me.Controls.Add(Me.btnINSERTORDERS)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.txtQUANTITY)
+        Me.Controls.Add(Me.dtpORDERS)
+        Me.Controls.Add(Me.cmbCUSTOMERS)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Orders"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
@@ -246,9 +246,9 @@ Partial Class Orders
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents cmbCUSTOMERS As ComboBox
+    Friend WithEvents dtpORDERS As DateTimePicker
+    Friend WithEvents txtQUANTITY As TextBox
     Friend WithEvents btnINSERTORDERS As Button
     Friend WithEvents dgvORDERS As DataGridView
     Friend WithEvents Label2 As Label
@@ -256,11 +256,11 @@ Partial Class Orders
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbPRODUCTS As ComboBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtHARGASATUAN As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtHARGA As TextBox
     Friend WithEvents btnUPDATEORDERS As Button
     Friend WithEvents btnDELETEORDERS As Button
     Friend WithEvents btnCANCELORDERS As Button
