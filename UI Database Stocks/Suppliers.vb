@@ -216,5 +216,4 @@ Public Class Suppliers
             txtEMAIL.Text = row.Cells(3).Value.ToString()
         End If
     End Sub
-
 End Class
