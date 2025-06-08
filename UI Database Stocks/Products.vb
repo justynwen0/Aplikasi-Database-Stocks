@@ -232,5 +232,4 @@ Public Class Products
             txtMEREKBARANG.Text = row.Cells(3).Value.ToString()
         End If
     End Sub
-
 End Class

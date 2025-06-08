@@ -23,18 +23,18 @@ Partial Class Customers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnINSERTCUSTOMERS = New System.Windows.Forms.Button()
         Me.txtNAMACUSTOMERS = New System.Windows.Forms.TextBox()
-        Me.dgvCUSTOMERS = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtNOMORTELEPONCUSTOMERS = New System.Windows.Forms.TextBox()
+        Me.txtEMAILCUSTOMERS = New System.Windows.Forms.TextBox()
+        Me.dgvCUSTOMERS = New System.Windows.Forms.DataGridView()
+        Me.btnINSERTCUSTOMERS = New System.Windows.Forms.Button()
         Me.btnUPDATECUSTOMERS = New System.Windows.Forms.Button()
         Me.btnDELETECUSTOMERS = New System.Windows.Forms.Button()
         Me.btnCANCELCUSTOMERS = New System.Windows.Forms.Button()
-        Me.txtNOMORTELEPONCUSTOMERS = New System.Windows.Forms.TextBox()
-        Me.txtEMAILCUSTOMERS = New System.Windows.Forms.TextBox()
         CType(Me.dgvCUSTOMERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,29 +48,12 @@ Partial Class Customers
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Customers"
         '
-        'btnINSERTCUSTOMERS
-        '
-        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(34, 462)
-        Me.btnINSERTCUSTOMERS.Name = "btnINSERTCUSTOMERS"
-        Me.btnINSERTCUSTOMERS.Size = New System.Drawing.Size(65, 23)
-        Me.btnINSERTCUSTOMERS.TabIndex = 1
-        Me.btnINSERTCUSTOMERS.Text = "&INSERT"
-        Me.btnINSERTCUSTOMERS.UseVisualStyleBackColor = True
-        '
         'txtNAMACUSTOMERS
         '
         Me.txtNAMACUSTOMERS.Location = New System.Drawing.Point(145, 347)
         Me.txtNAMACUSTOMERS.Name = "txtNAMACUSTOMERS"
         Me.txtNAMACUSTOMERS.Size = New System.Drawing.Size(167, 20)
         Me.txtNAMACUSTOMERS.TabIndex = 2
-        '
-        'dgvCUSTOMERS
-        '
-        Me.dgvCUSTOMERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCUSTOMERS.Location = New System.Drawing.Point(12, 75)
-        Me.dgvCUSTOMERS.Name = "dgvCUSTOMERS"
-        Me.dgvCUSTOMERS.Size = New System.Drawing.Size(618, 257)
-        Me.dgvCUSTOMERS.TabIndex = 3
         '
         'Label2
         '
@@ -112,33 +95,6 @@ Partial Class Customers
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Email :"
         '
-        'btnUPDATECUSTOMERS
-        '
-        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(105, 462)
-        Me.btnUPDATECUSTOMERS.Name = "btnUPDATECUSTOMERS"
-        Me.btnUPDATECUSTOMERS.Size = New System.Drawing.Size(65, 23)
-        Me.btnUPDATECUSTOMERS.TabIndex = 8
-        Me.btnUPDATECUSTOMERS.Text = "&UPDATE"
-        Me.btnUPDATECUSTOMERS.UseVisualStyleBackColor = True
-        '
-        'btnDELETECUSTOMERS
-        '
-        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(176, 462)
-        Me.btnDELETECUSTOMERS.Name = "btnDELETECUSTOMERS"
-        Me.btnDELETECUSTOMERS.Size = New System.Drawing.Size(65, 23)
-        Me.btnDELETECUSTOMERS.TabIndex = 9
-        Me.btnDELETECUSTOMERS.Text = "&DELETE"
-        Me.btnDELETECUSTOMERS.UseVisualStyleBackColor = True
-        '
-        'btnCANCELCUSTOMERS
-        '
-        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(247, 462)
-        Me.btnCANCELCUSTOMERS.Name = "btnCANCELCUSTOMERS"
-        Me.btnCANCELCUSTOMERS.Size = New System.Drawing.Size(65, 23)
-        Me.btnCANCELCUSTOMERS.TabIndex = 10
-        Me.btnCANCELCUSTOMERS.Text = "&CANCEL"
-        Me.btnCANCELCUSTOMERS.UseVisualStyleBackColor = True
-        '
         'txtNOMORTELEPONCUSTOMERS
         '
         Me.txtNOMORTELEPONCUSTOMERS.Location = New System.Drawing.Point(145, 386)
@@ -153,23 +109,67 @@ Partial Class Customers
         Me.txtEMAILCUSTOMERS.Size = New System.Drawing.Size(167, 20)
         Me.txtEMAILCUSTOMERS.TabIndex = 12
         '
+        'dgvCUSTOMERS
+        '
+        Me.dgvCUSTOMERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCUSTOMERS.Location = New System.Drawing.Point(12, 75)
+        Me.dgvCUSTOMERS.Name = "dgvCUSTOMERS"
+        Me.dgvCUSTOMERS.Size = New System.Drawing.Size(618, 257)
+        Me.dgvCUSTOMERS.TabIndex = 13
+        '
+        'btnINSERTCUSTOMERS
+        '
+        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(34, 462)
+        Me.btnINSERTCUSTOMERS.Name = "btnINSERTCUSTOMERS"
+        Me.btnINSERTCUSTOMERS.Size = New System.Drawing.Size(65, 23)
+        Me.btnINSERTCUSTOMERS.TabIndex = 14
+        Me.btnINSERTCUSTOMERS.Text = "&INSERT"
+        Me.btnINSERTCUSTOMERS.UseVisualStyleBackColor = True
+        '
+        'btnUPDATECUSTOMERS
+        '
+        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(105, 462)
+        Me.btnUPDATECUSTOMERS.Name = "btnUPDATECUSTOMERS"
+        Me.btnUPDATECUSTOMERS.Size = New System.Drawing.Size(65, 23)
+        Me.btnUPDATECUSTOMERS.TabIndex = 15
+        Me.btnUPDATECUSTOMERS.Text = "&UPDATE"
+        Me.btnUPDATECUSTOMERS.UseVisualStyleBackColor = True
+        '
+        'btnDELETECUSTOMERS
+        '
+        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(176, 462)
+        Me.btnDELETECUSTOMERS.Name = "btnDELETECUSTOMERS"
+        Me.btnDELETECUSTOMERS.Size = New System.Drawing.Size(65, 23)
+        Me.btnDELETECUSTOMERS.TabIndex = 16
+        Me.btnDELETECUSTOMERS.Text = "&DELETE"
+        Me.btnDELETECUSTOMERS.UseVisualStyleBackColor = True
+        '
+        'btnCANCELCUSTOMERS
+        '
+        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(247, 462)
+        Me.btnCANCELCUSTOMERS.Name = "btnCANCELCUSTOMERS"
+        Me.btnCANCELCUSTOMERS.Size = New System.Drawing.Size(65, 23)
+        Me.btnCANCELCUSTOMERS.TabIndex = 17
+        Me.btnCANCELCUSTOMERS.Text = "&CANCEL"
+        Me.btnCANCELCUSTOMERS.UseVisualStyleBackColor = True
+        '
         'Customers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(649, 495)
-        Me.Controls.Add(Me.txtEMAILCUSTOMERS)
-        Me.Controls.Add(Me.txtNOMORTELEPONCUSTOMERS)
         Me.Controls.Add(Me.btnCANCELCUSTOMERS)
         Me.Controls.Add(Me.btnDELETECUSTOMERS)
         Me.Controls.Add(Me.btnUPDATECUSTOMERS)
+        Me.Controls.Add(Me.btnINSERTCUSTOMERS)
+        Me.Controls.Add(Me.dgvCUSTOMERS)
+        Me.Controls.Add(Me.txtEMAILCUSTOMERS)
+        Me.Controls.Add(Me.txtNOMORTELEPONCUSTOMERS)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.dgvCUSTOMERS)
         Me.Controls.Add(Me.txtNAMACUSTOMERS)
-        Me.Controls.Add(Me.btnINSERTCUSTOMERS)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Customers"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
@@ -181,16 +181,16 @@ Partial Class Customers
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnINSERTCUSTOMERS As Button
     Friend WithEvents txtNAMACUSTOMERS As TextBox
-    Friend WithEvents dgvCUSTOMERS As DataGridView
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents txtNOMORTELEPONCUSTOMERS As TextBox
+    Friend WithEvents txtEMAILCUSTOMERS As TextBox
+    Friend WithEvents dgvCUSTOMERS As DataGridView
+    Friend WithEvents btnINSERTCUSTOMERS As Button
     Friend WithEvents btnUPDATECUSTOMERS As Button
     Friend WithEvents btnDELETECUSTOMERS As Button
     Friend WithEvents btnCANCELCUSTOMERS As Button
-    Friend WithEvents txtNOMORTELEPONCUSTOMERS As TextBox
-    Friend WithEvents txtEMAILCUSTOMERS As TextBox
 End Class
