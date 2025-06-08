@@ -20,7 +20,7 @@ Public Class Products
             conn.Close()
         End Try
     End Sub
-    Private Sub Products2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Products_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
     End Sub
     Private Sub btnUPDATE_Click(sender As Object, e As EventArgs) Handles btnUPDATE.Click
@@ -28,6 +28,8 @@ Public Class Products
         Dim sql As String
         Dim cmd As New SqlCommand
         conn = New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim kodeBarang As Integer = Convert.ToInt32(dgvPRODUCTS.CurrentRow.Cells("KodeBarang").Value)
+
         ' Validasi: semua field wajib diisi
         If String.IsNullOrEmpty(txtNAMABARANG.Text) OrElse
             String.IsNullOrEmpty(txtHARGA.Text) OrElse
@@ -43,9 +45,9 @@ Public Class Products
         conn.Open()
 
         ' Cek apakah data ada berdasarkan NamaBarang
-        Dim cekSql As String = "SELECT COUNT(*) FROM Products WHERE NamaBarang = @nama"
+        Dim cekSql As String = "SELECT COUNT(*) FROM Products WHERE KodeBarang = @KodeBarang"
         Dim cekCmd As New SqlCommand(cekSql, conn)
-        cekCmd.Parameters.AddWithValue("@nama", Trim(txtNAMABARANG.Text))
+        cekCmd.Parameters.AddWithValue("@KodeBarang", kodeBarang)
         Dim count As Integer = Convert.ToInt32(cekCmd.ExecuteScalar())
 
         If count = 0 Then
@@ -55,7 +57,11 @@ Public Class Products
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin memperbaharui barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin memperbarui data barang dengan kode """ & kodeBarang & """?" & vbCrLf &
+                                                  "Nama: " & txtNAMABARANG.Text.Trim() & vbCrLf &
+                                                  "Harga: Rp. " & txtHARGA.Text.Trim() & vbCrLf &
+                                                  "Merek: " & txtMEREKBARANG.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub
@@ -63,13 +69,14 @@ Public Class Products
 
 
         ' Jika ada, lakukan update
-        sql = "UPDATE Products SET NamaBarang = @nama, Harga = @harga, MerekBarang = @merek WHERE NamaBarang = @nama"
+        sql = "UPDATE Products SET NamaBarang = @nama, Harga = @harga, MerekBarang = @merek WHERE KodeBarang = @KodeBarang"
         With cmd
             .Connection = conn
             .CommandText = sql
             .Parameters.AddWithValue("@nama", Trim(txtNAMABARANG.Text))
             .Parameters.AddWithValue("@harga", Trim(txtHARGA.Text))
             .Parameters.AddWithValue("@merek", Trim(txtMEREKBARANG.Text))
+            .Parameters.AddWithValue("@KodeBarang", kodebarang)
             .ExecuteNonQuery()
         End With
 
@@ -83,12 +90,13 @@ Public Class Products
         Dim sql As String
         Dim cmd As New SqlCommand
         conn = New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim kodeBarang As Integer = Convert.ToInt32(dgvPRODUCTS.CurrentRow.Cells("KodeBarang").Value)
         conn.Open()
 
         ' Cek apakah data ada
-        Dim cekSql As String = "SELECT COUNT(*) FROM Products WHERE NamaBarang = @nama"
+        Dim cekSql As String = "SELECT COUNT(*) FROM Products WHERE KodeBarang = @KodeBarang"
         Dim cekCmd As New SqlCommand(cekSql, conn)
-        cekCmd.Parameters.AddWithValue("@nama", Trim(txtNAMABARANG.Text))
+        cekCmd.Parameters.AddWithValue("@KodeBarang", kodeBarang)
         Dim count As Integer = Convert.ToInt32(cekCmd.ExecuteScalar())
 
         If count = 0 Then
@@ -103,18 +111,22 @@ Public Class Products
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menghapus barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menghapus data barang dengan kode """ & kodeBarang & """?" & vbCrLf &
+                                                  "Nama: " & txtNAMABARANG.Text.Trim() & vbCrLf &
+                                                  "Harga: Rp. " & txtHARGA.Text.Trim() & vbCrLf &
+                                                  "Merek: " & txtMEREKBARANG.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub
         End If
 
         ' Lanjut hapus jika ada
-        sql = "DELETE FROM Products WHERE NamaBarang = @nama"
+        sql = "DELETE FROM Products WHERE KodeBarang = @KodeBarang"
         With cmd
             .Connection = conn
             .CommandText = sql
-            .Parameters.AddWithValue("@nama", Trim(txtNAMABARANG.Text))
+            .Parameters.AddWithValue("@KodeBarang", kodeBarang)
             .ExecuteNonQuery()
         End With
 
@@ -139,6 +151,7 @@ Public Class Products
         Dim sql As String
         Dim cmd As New SqlCommand
         conn = New SqlConnection(DatabaseHelper.GetConnectionString())
+
 
         ' Validasi field wajib diisi
         If String.IsNullOrEmpty(txtNAMABARANG.Text) OrElse
@@ -180,7 +193,11 @@ Public Class Products
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menambahkan barang dengan nama """ & txtNAMABARANG.Text.Trim() & """, dengan harga ""Rp." & txtHARGA.Text.Trim() & """, dan mereknya """ & txtMEREKBARANG.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menambahkan data barang dengan " & vbCrLf &
+                                                  "Nama: " & txtNAMABARANG.Text.Trim() & vbCrLf &
+                                                  "Harga: Rp. " & txtHARGA.Text.Trim() & vbCrLf &
+                                                  "Merek: " & txtMEREKBARANG.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub
