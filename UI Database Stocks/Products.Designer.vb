@@ -113,7 +113,7 @@ Partial Class Products
         '
         Me.txtMEREKBARANG.Location = New System.Drawing.Point(145, 424)
         Me.txtMEREKBARANG.Name = "txtMEREKBARANG"
-        Me.txtMEREKBARANG.Size = New System.Drawing.Size(174, 20)
+        Me.txtMEREKBARANG.Size = New System.Drawing.Size(167, 20)
         Me.txtMEREKBARANG.TabIndex = 8
         '
         'btnDELETE
