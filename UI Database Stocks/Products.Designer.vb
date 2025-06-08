@@ -22,7 +22,6 @@ Partial Class Products
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvPRODUCTS = New System.Windows.Forms.DataGridView()
         Me.btnUPDATE = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,50 +37,40 @@ Partial Class Products
         CType(Me.dgvPRODUCTS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 52)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "List Products :"
-        '
         'dgvPRODUCTS
         '
         Me.dgvPRODUCTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPRODUCTS.Location = New System.Drawing.Point(12, 75)
+        Me.dgvPRODUCTS.Location = New System.Drawing.Point(12, 61)
         Me.dgvPRODUCTS.Name = "dgvPRODUCTS"
         Me.dgvPRODUCTS.Size = New System.Drawing.Size(618, 257)
         Me.dgvPRODUCTS.TabIndex = 1
         '
         'btnUPDATE
         '
-        Me.btnUPDATE.Location = New System.Drawing.Point(115, 462)
+        Me.btnUPDATE.Location = New System.Drawing.Point(225, 460)
         Me.btnUPDATE.Name = "btnUPDATE"
         Me.btnUPDATE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATE.TabIndex = 2
-        Me.btnUPDATE.Text = "&UPDATE"
+        Me.btnUPDATE.Text = "&Update"
         Me.btnUPDATE.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(8, 384)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 20)
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Harga  :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 345)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(8, 345)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 20)
+        Me.Label3.Size = New System.Drawing.Size(115, 20)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Nama Barang :"
         '
@@ -95,10 +84,10 @@ Partial Class Products
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(8, 422)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 20)
+        Me.Label4.Size = New System.Drawing.Size(117, 20)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Merek Barang :"
         '
@@ -118,38 +107,38 @@ Partial Class Products
         '
         'btnDELETE
         '
-        Me.btnDELETE.Location = New System.Drawing.Point(196, 462)
+        Me.btnDELETE.Location = New System.Drawing.Point(306, 460)
         Me.btnDELETE.Name = "btnDELETE"
         Me.btnDELETE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETE.TabIndex = 9
-        Me.btnDELETE.Text = "&DELETE"
+        Me.btnDELETE.Text = "&Delete"
         Me.btnDELETE.UseVisualStyleBackColor = True
         '
         'btnCANCEL
         '
-        Me.btnCANCEL.Location = New System.Drawing.Point(277, 462)
+        Me.btnCANCEL.Location = New System.Drawing.Point(387, 460)
         Me.btnCANCEL.Name = "btnCANCEL"
         Me.btnCANCEL.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCEL.TabIndex = 10
-        Me.btnCANCEL.Text = "&CANCEL"
+        Me.btnCANCEL.Text = "&Cancel"
         Me.btnCANCEL.UseVisualStyleBackColor = True
         '
         'btnINSERT
         '
-        Me.btnINSERT.Location = New System.Drawing.Point(34, 462)
+        Me.btnINSERT.Location = New System.Drawing.Point(144, 460)
         Me.btnINSERT.Name = "btnINSERT"
         Me.btnINSERT.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERT.TabIndex = 12
-        Me.btnINSERT.Text = "&INSERT"
+        Me.btnINSERT.Text = "&Insert"
         Me.btnINSERT.UseVisualStyleBackColor = True
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(241, 9)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(259, 9)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(130, 31)
+        Me.Label5.Size = New System.Drawing.Size(122, 31)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Products"
         '
@@ -170,7 +159,6 @@ Partial Class Products
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnUPDATE)
         Me.Controls.Add(Me.dgvPRODUCTS)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "Products"
         Me.Text = "Info Tentang Products"
         CType(Me.dgvPRODUCTS, System.ComponentModel.ISupportInitialize).EndInit()
@@ -178,8 +166,6 @@ Partial Class Products
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents dgvPRODUCTS As DataGridView
     Friend WithEvents btnUPDATE As Button
     Friend WithEvents Label2 As Label
