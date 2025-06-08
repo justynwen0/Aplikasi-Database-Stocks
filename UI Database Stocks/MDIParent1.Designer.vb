@@ -45,7 +45,11 @@ Partial Class MDIParent1
         'btnRegisterMDI
         '
         Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
+        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 144)
+=======
         Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 49)
+>>>>>>> 72b12d94f2f26b88e14ce9cf783472f73a5f73e2
         Me.btnRegisterMDI.Name = "btnRegisterMDI"
         Me.btnRegisterMDI.Size = New System.Drawing.Size(102, 57)
         Me.btnRegisterMDI.TabIndex = 11
