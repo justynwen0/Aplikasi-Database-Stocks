@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.Runtime.Remoting.Messaging
+Imports System.Windows.Forms
 
 Public Class MDIParent1
     Private Sub ShowForm(formType As Type)
