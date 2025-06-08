@@ -20,7 +20,7 @@ Public Class Suppliers
             conn.Close()
         End Try
     End Sub
-    Private Sub Suppliers2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Suppliers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
     End Sub
     Private Sub btnUPDATE_Click(sender As Object, e As EventArgs) Handles btnUPDATE.Click
@@ -28,6 +28,7 @@ Public Class Suppliers
         Dim sql As String
         Dim cmd As New SqlCommand
         conn = New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim ID As Integer = Convert.ToInt32(dgvSUPPLIERS.CurrentRow.Cells("ID").Value)
 
 
         ' Validasi: semua field wajib diisi
@@ -45,9 +46,9 @@ Public Class Suppliers
         conn.Open()
 
         ' Cek apakah data ada berdasarkan Namasuppliers baru
-        Dim cekSql As String = "SELECT COUNT(*) FROM Suppliers WHERE Nama = @nama"
+        Dim cekSql As String = "SELECT COUNT(*) FROM Suppliers WHERE ID = @ID"
         Dim cekCmd As New SqlCommand(cekSql, conn)
-        cekCmd.Parameters.AddWithValue("@nama", Trim(txtNAMA.Text))
+        cekCmd.Parameters.AddWithValue("@ID", ID)
         Dim count As Integer = Convert.ToInt32(cekCmd.ExecuteScalar())
 
         If count = 0 Then
@@ -57,7 +58,11 @@ Public Class Suppliers
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin memperbaharui suppliers dengan nama """ & txtNAMA.Text.Trim() & """, dengan nomor telepon """ & txtNOTELP.Text.Trim() & """, dan emailnya """ & txtEMAIL.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin memperbarui data suppliers dengan kode """ & ID & """?" & vbCrLf &
+                                                  "Nama: " & txtNAMA.Text.Trim() & vbCrLf &
+                                                  "NomorTelepon: " & txtNOTELP.Text.Trim() & vbCrLf &
+                                                  "Email: " & txtEMAIL.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub
@@ -65,13 +70,14 @@ Public Class Suppliers
 
 
         ' Jika ada, lakukan update
-        sql = "UPDATE Suppliers SET Nama = @nama, Nomor Telepon = @nomor, email = @email WHERE Nama = @nama"
+        sql = "UPDATE Suppliers SET Nama = @nama, NomorTelepon = @nomor, email = @email WHERE ID = @ID"
         With cmd
             .Connection = conn
             .CommandText = sql
             .Parameters.AddWithValue("@nama", Trim(txtNAMA.Text))
             .Parameters.AddWithValue("@nomor", Trim(txtNOTELP.Text))
             .Parameters.AddWithValue("@email", Trim(txtEMAIL.Text))
+            .Parameters.AddWithValue("@ID", ID)
             .ExecuteNonQuery()
         End With
 
@@ -85,12 +91,14 @@ Public Class Suppliers
         Dim sql As String
         Dim cmd As New SqlCommand
         conn = New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim ID As Integer = Convert.ToInt32(dgvSUPPLIERS.CurrentRow.Cells("ID").Value)
         conn.Open()
 
+
         ' Cek apakah data ada
-        Dim cekSql As String = "SELECT COUNT(*) FROM Suppliers WHERE Nama = @nama"
+        Dim cekSql As String = "SELECT COUNT(*) FROM Suppliers WHERE ID = @ID"
         Dim cekCmd As New SqlCommand(cekSql, conn)
-        cekCmd.Parameters.AddWithValue("@nama", Trim(txtNAMA.Text))
+        cekCmd.Parameters.AddWithValue("@ID", ID)
         Dim count As Integer = Convert.ToInt32(cekCmd.ExecuteScalar())
 
         If count = 0 Then
@@ -105,18 +113,22 @@ Public Class Suppliers
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menghapus suppliers dengan nama """ & txtNAMA.Text.Trim() & """, dengan nomor telepon """ & txtNOTELP.Text.Trim() & """, dan emailnya """ & txtEMAIL.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menghapus data suppliers dengan kode """ & ID & """?" & vbCrLf &
+                                                  "Nama: " & txtNAMA.Text.Trim() & vbCrLf &
+                                                  "NomorTelepon: " & txtNOTELP.Text.Trim() & vbCrLf &
+                                                  "Email: " & txtEMAIL.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub
         End If
 
         ' Lanjut hapus jika ada
-        sql = "DELETE FROM Suppliers WHERE Namasuppliers baru = @nama"
+        sql = "DELETE FROM Suppliers WHERE ID = @ID"
         With cmd
             .Connection = conn
             .CommandText = sql
-            .Parameters.AddWithValue("@nama", Trim(txtNAMA.Text))
+            .Parameters.AddWithValue("@ID", ID)
             .ExecuteNonQuery()
         End With
 
@@ -181,7 +193,11 @@ Public Class Suppliers
             Exit Sub
         End If
 
-        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menambahkan suppliers dengan nama """ & txtNAMA.Text.Trim() & """, dengan nomor telepon """ & txtNOTELP.Text.Trim() & """, dan emailnya """ & txtEMAIL.Text.Trim() & """?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim konfirmasi As DialogResult = MessageBox.Show("Anda ingin menambahkan data suppliers dengan " & vbCrLf &
+                                                  "Nama: " & txtNAMA.Text.Trim() & vbCrLf &
+                                                  "NomorTelepon: " & txtNOTELP.Text.Trim() & vbCrLf &
+                                                  "Email: " & txtEMAIL.Text.Trim(),
+                                                  "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If konfirmasi = DialogResult.No Then
             conn.Close()
             Exit Sub

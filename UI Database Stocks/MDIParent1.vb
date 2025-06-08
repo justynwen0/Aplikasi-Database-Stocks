@@ -23,4 +23,12 @@ Public Class MDIParent1
     Private Sub btnRegisterMDI_Click(sender As Object, e As EventArgs) Handles btnRegisterMDI.Click
         ShowForm(GetType(RegisterPage))
     End Sub
+
+    Private Sub btnSuppliersMDI_Click(sender As Object, e As EventArgs) Handles btnSuppliersMDI.Click
+        ShowForm(GetType(Suppliers))
+    End Sub
+
+    Private Sub btnCustomersMDI_Click(sender As Object, e As EventArgs) Handles btnCustomersMDI.Click
+        ShowForm(GetType(Customers))
+    End Sub
 End Class
