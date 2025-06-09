@@ -35,7 +35,7 @@ Partial Class MDIParent1
         'btnProductsMDI
         '
         Me.btnProductsMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductsMDI.Location = New System.Drawing.Point(12, 126)
+        Me.btnProductsMDI.Location = New System.Drawing.Point(12, 71)
         Me.btnProductsMDI.Name = "btnProductsMDI"
         Me.btnProductsMDI.Size = New System.Drawing.Size(102, 57)
         Me.btnProductsMDI.TabIndex = 9
@@ -45,11 +45,7 @@ Partial Class MDIParent1
         'btnRegisterMDI
         '
         Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< HEAD
-        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 144)
-=======
-        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 49)
->>>>>>> 72b12d94f2f26b88e14ce9cf783472f73a5f73e2
+        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 134)
         Me.btnRegisterMDI.Name = "btnRegisterMDI"
         Me.btnRegisterMDI.Size = New System.Drawing.Size(102, 57)
         Me.btnRegisterMDI.TabIndex = 11
@@ -59,7 +55,7 @@ Partial Class MDIParent1
         'btnCustomersMDI
         '
         Me.btnCustomersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCustomersMDI.Location = New System.Drawing.Point(12, 280)
+        Me.btnCustomersMDI.Location = New System.Drawing.Point(12, 257)
         Me.btnCustomersMDI.Name = "btnCustomersMDI"
         Me.btnCustomersMDI.Size = New System.Drawing.Size(102, 52)
         Me.btnCustomersMDI.TabIndex = 13
@@ -69,7 +65,7 @@ Partial Class MDIParent1
         'btnSuppliersMDI
         '
         Me.btnSuppliersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSuppliersMDI.Location = New System.Drawing.Point(12, 202)
+        Me.btnSuppliersMDI.Location = New System.Drawing.Point(12, 197)
         Me.btnSuppliersMDI.Name = "btnSuppliersMDI"
         Me.btnSuppliersMDI.Size = New System.Drawing.Size(102, 54)
         Me.btnSuppliersMDI.TabIndex = 14
@@ -79,7 +75,7 @@ Partial Class MDIParent1
         'btnOrdersMDI
         '
         Me.btnOrdersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOrdersMDI.Location = New System.Drawing.Point(12, 353)
+        Me.btnOrdersMDI.Location = New System.Drawing.Point(12, 315)
         Me.btnOrdersMDI.Name = "btnOrdersMDI"
         Me.btnOrdersMDI.Size = New System.Drawing.Size(102, 57)
         Me.btnOrdersMDI.TabIndex = 16

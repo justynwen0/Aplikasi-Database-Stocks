@@ -27,7 +27,6 @@ Partial Class Orders
         Me.dtpORDERS = New System.Windows.Forms.DateTimePicker()
         Me.txtQUANTITY = New System.Windows.Forms.TextBox()
         Me.btnINSERTORDERS = New System.Windows.Forms.Button()
-        Me.dgvORDERS = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -41,6 +40,7 @@ Partial Class Orders
         Me.btnUPDATEORDERS = New System.Windows.Forms.Button()
         Me.btnDELETEORDERS = New System.Windows.Forms.Button()
         Me.btnCANCELORDERS = New System.Windows.Forms.Button()
+        Me.dgvORDERS = New System.Windows.Forms.DataGridView()
         CType(Me.dgvORDERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,14 +84,6 @@ Partial Class Orders
         Me.btnINSERTORDERS.TabIndex = 4
         Me.btnINSERTORDERS.Text = "&INSERT"
         Me.btnINSERTORDERS.UseVisualStyleBackColor = True
-        '
-        'dgvORDERS
-        '
-        Me.dgvORDERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvORDERS.Location = New System.Drawing.Point(12, 75)
-        Me.dgvORDERS.Name = "dgvORDERS"
-        Me.dgvORDERS.Size = New System.Drawing.Size(618, 257)
-        Me.dgvORDERS.TabIndex = 5
         '
         'Label2
         '
@@ -212,11 +204,20 @@ Partial Class Orders
         Me.btnCANCELORDERS.Text = "&CANCEL"
         Me.btnCANCELORDERS.UseVisualStyleBackColor = True
         '
+        'dgvORDERS
+        '
+        Me.dgvORDERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvORDERS.Location = New System.Drawing.Point(12, 75)
+        Me.dgvORDERS.Name = "dgvORDERS"
+        Me.dgvORDERS.Size = New System.Drawing.Size(618, 257)
+        Me.dgvORDERS.TabIndex = 19
+        '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(649, 604)
+        Me.ClientSize = New System.Drawing.Size(649, 606)
+        Me.Controls.Add(Me.dgvORDERS)
         Me.Controls.Add(Me.btnCANCELORDERS)
         Me.Controls.Add(Me.btnDELETEORDERS)
         Me.Controls.Add(Me.btnUPDATEORDERS)
@@ -230,7 +231,6 @@ Partial Class Orders
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.dgvORDERS)
         Me.Controls.Add(Me.btnINSERTORDERS)
         Me.Controls.Add(Me.txtQUANTITY)
         Me.Controls.Add(Me.dtpORDERS)
@@ -250,7 +250,6 @@ Partial Class Orders
     Friend WithEvents dtpORDERS As DateTimePicker
     Friend WithEvents txtQUANTITY As TextBox
     Friend WithEvents btnINSERTORDERS As Button
-    Friend WithEvents dgvORDERS As DataGridView
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -264,4 +263,5 @@ Partial Class Orders
     Friend WithEvents btnUPDATEORDERS As Button
     Friend WithEvents btnDELETEORDERS As Button
     Friend WithEvents btnCANCELORDERS As Button
+    Friend WithEvents dgvORDERS As DataGridView
 End Class

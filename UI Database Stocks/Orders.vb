@@ -6,6 +6,41 @@ Public Class Orders
         LoadProductsToComboBox()
         txtHARGASATUAN.ReadOnly = True
         txtHARGA.ReadOnly = True
+
+        dgvORDERS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvORDERS.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvORDERS.ReadOnly = True
+
+        LoadOrders()
+    End Sub
+
+    Private Sub LoadOrders()
+        Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim query As String = "
+        SELECT 
+            o.PembelianBarangID AS OrderID,
+            o.TanggalOrders,
+            o.Harga,
+            d.KuantitasBarang,
+            d.HargaSatuan,
+            c.Nama,
+            p.NamaBarang
+        FROM Orders o
+        JOIN DetailOrders d ON o.PembelianBarangID = d.Orders_PembelianBarangID
+        JOIN InventoryStock_has_Orders i ON i.Orders_PembelianBarangID = o.PembelianBarangID
+        JOIN Customers c ON c.ID = i.Customers_ID
+        JOIN Products p ON p.KodeBarang = i.Products_KodeBarang
+    "
+
+        Dim adapter As New SqlDataAdapter(query, conn)
+        Dim table As New DataTable()
+
+        Try
+            adapter.Fill(table)
+            dgvORDERS.DataSource = table
+        Catch ex As Exception
+            MessageBox.Show("Gagal memuat data: " & ex.Message)
+        End Try
     End Sub
 
     Private Sub LoadCustomersToComboBox()
@@ -147,6 +182,7 @@ Public Class Orders
             MessageBox.Show("Terjadi kesalahan: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
             conn.Close()
+            LoadOrders()
         End Try
 
 
@@ -194,7 +230,138 @@ Public Class Orders
         End Try
     End Function
 
+    Private Sub btnUPDATEORDERS_Click(sender As Object, e As EventArgs) Handles btnUPDATEORDERS.Click
 
+        Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim trans As SqlTransaction = Nothing
 
+        If MessageBox.Show("Apakah Anda yakin ingin memperbarui data tersebut?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
+            Exit Sub
+        End If
 
+        Try
+            conn.Open()
+            trans = conn.BeginTransaction()
+
+            ' Update Orders
+            Dim updateOrderCmd As New SqlCommand("UPDATE Orders SET TanggalOrders = @Tanggal, Harga = @Harga WHERE PembelianBarangID = @OrderID
+        ", conn, trans)
+            Dim selectedOrderId As Integer = Convert.ToInt32(dgvORDERS.CurrentRow.Cells("OrderID").Value)
+
+            updateOrderCmd.Parameters.AddWithValue("@Tanggal", dtpORDERS.Value)
+            updateOrderCmd.Parameters.AddWithValue("@Harga", Convert.ToDecimal(txtHARGA.Text))
+            updateOrderCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            updateOrderCmd.ExecuteNonQuery()
+
+            ' Update DetailOrders
+            Dim updateDetailCmd As New SqlCommand("
+            UPDATE DetailOrders SET KuantitasBarang = @Qty, HargaSatuan = @HargaSatuan 
+            WHERE Orders_PembelianBarangID = @OrderID
+        ", conn, trans)
+
+            updateDetailCmd.Parameters.AddWithValue("@Qty", Convert.ToInt32(txtQUANTITY.Text))
+            updateDetailCmd.Parameters.AddWithValue("@HargaSatuan", Convert.ToDecimal(txtHARGASATUAN.Text))
+            updateDetailCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            updateDetailCmd.ExecuteNonQuery()
+
+            ' Update InventoryStock_has_Orders
+            Dim updateInventoryCmd As New SqlCommand("
+            UPDATE InventoryStock_has_Orders 
+            SET Customers_ID = @CustomerID, Products_KodeBarang = @ProductID 
+            WHERE Orders_PembelianBarangID = @OrderID
+        ", conn, trans)
+
+            updateInventoryCmd.Parameters.AddWithValue("@CustomerID", GetCustomerIdByName(cmbCUSTOMERS.SelectedItem.ToString()))
+            updateInventoryCmd.Parameters.AddWithValue("@ProductID", GetProductIdByName(cmbPRODUCTS.SelectedItem.ToString()))
+            updateInventoryCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            updateInventoryCmd.ExecuteNonQuery()
+
+            trans.Commit()
+            MessageBox.Show("Data berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            trans?.Rollback()
+            MessageBox.Show("Gagal update: " & ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            conn.Close()
+            LoadOrders()
+        End Try
+
+    End Sub
+
+    Private Sub btnDELETEORDERS_Click(sender As Object, e As EventArgs) Handles btnDELETEORDERS.Click
+
+        Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
+        Dim trans As SqlTransaction = Nothing
+
+        If MessageBox.Show("Apakah Anda yakin ingin memperbarui data tersebut?", "Konfirmasi Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
+            Exit Sub
+        End If
+
+        Try
+            conn.Open()
+            trans = conn.BeginTransaction()
+
+            ' Hapus dari tabel yang tergantung lebih dulu
+            Dim deleteInventoryCmd As New SqlCommand("
+            DELETE FROM InventoryStock_has_Orders WHERE Orders_PembelianBarangID = @OrderID
+        ", conn, trans)
+            Dim selectedOrderId As Integer = Convert.ToInt32(dgvORDERS.CurrentRow.Cells("OrderID").Value)
+
+            deleteInventoryCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            deleteInventoryCmd.ExecuteNonQuery()
+
+            Dim deleteDetailCmd As New SqlCommand("
+            DELETE FROM DetailOrders WHERE Orders_PembelianBarangID = @OrderID
+        ", conn, trans)
+
+            deleteDetailCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            deleteDetailCmd.ExecuteNonQuery()
+
+            Dim deleteOrderCmd As New SqlCommand("
+            DELETE FROM Orders WHERE PembelianBarangID = @OrderID
+        ", conn, trans)
+
+            deleteOrderCmd.Parameters.AddWithValue("@OrderID", selectedOrderId)
+            deleteOrderCmd.ExecuteNonQuery()
+
+            trans.Commit()
+            MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            trans?.Rollback()
+            MessageBox.Show("Gagal hapus: " & ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            conn.Close()
+            LoadOrders()
+        End Try
+
+    End Sub
+
+    Private Sub btnCANCELORDERS_Click(sender As Object, e As EventArgs) Handles btnCANCELORDERS.Click
+        txtHARGA.Text = ""
+        txtHARGASATUAN.Text = ""
+        txtQUANTITY.Text = ""
+        cmbCUSTOMERS.Text = ""
+        cmbPRODUCTS.Text = ""
+    End Sub
+
+    Private Sub dgvORDERS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvORDERS.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow = dgvORDERS.Rows(e.RowIndex)
+            cmbCUSTOMERS.Text = row.Cells(5).Value.ToString()
+            txtHARGA.Text = row.Cells(2).Value.ToString()
+            txtHARGASATUAN.Text = row.Cells(4).Value.ToString()
+            txtQUANTITY.Text = row.Cells(3).Value.ToString()
+            cmbPRODUCTS.Text = row.Cells(6).Value.ToString()
+
+            Dim tanggalOrder As Object = row.Cells(1).Value
+            Dim tanggalParsed As DateTime
+
+            If DateTime.TryParse(tanggalOrder.ToString(), tanggalParsed) Then
+                dtpORDERS.Value = tanggalParsed
+            Else
+                dtpORDERS.Value = Date.Today ' fallback jika gagal parse
+            End If
+
+        End If
+    End Sub
 End Class
