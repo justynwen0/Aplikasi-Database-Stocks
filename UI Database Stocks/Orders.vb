@@ -23,7 +23,7 @@ Public Class Orders
             o.Harga,
             d.KuantitasBarang,
             d.HargaSatuan,
-            c.Nama,
+            c.Nama AS NamaCustomers,
             p.NamaBarang
         FROM Orders o
         JOIN DetailOrders d ON o.PembelianBarangID = d.Orders_PembelianBarangID
