@@ -108,10 +108,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UI Database Stocks\Orders.Designer.vb">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Database Stocks\Orders.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI Database Stocks\Products.Designer.vb">
       <DependentUpon>Products.vb</DependentUpon>
     </Compile>
-    <Compile Include="UI Database Stocks\Products.vb" />
+    <Compile Include="UI Database Stocks\Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI Database Stocks\RegisterPage.Designer.vb">
       <DependentUpon>RegisterPage.vb</DependentUpon>
     </Compile>
@@ -140,6 +148,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Database Stocks\Orders.resx">
+      <DependentUpon>Orders.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Database Stocks\Products.resx">
       <DependentUpon>Products.vb</DependentUpon>

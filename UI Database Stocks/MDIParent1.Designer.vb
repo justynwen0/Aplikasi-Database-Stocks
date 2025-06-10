@@ -29,57 +29,65 @@ Partial Class MDIParent1
         Me.btnRegisterMDI = New System.Windows.Forms.Button()
         Me.btnCustomersMDI = New System.Windows.Forms.Button()
         Me.btnSuppliersMDI = New System.Windows.Forms.Button()
+        Me.btnOdersMDI = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnProductsMDI
         '
-        Me.btnProductsMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductsMDI.Location = New System.Drawing.Point(12, 126)
+        Me.btnProductsMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProductsMDI.Location = New System.Drawing.Point(41, 100)
         Me.btnProductsMDI.Name = "btnProductsMDI"
-        Me.btnProductsMDI.Size = New System.Drawing.Size(102, 57)
+        Me.btnProductsMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnProductsMDI.TabIndex = 9
         Me.btnProductsMDI.Text = "Products"
         Me.btnProductsMDI.UseVisualStyleBackColor = True
         '
         'btnRegisterMDI
         '
-        Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-<<<<<<< HEAD
-        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 144)
-=======
-        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 49)
->>>>>>> 72b12d94f2f26b88e14ce9cf783472f73a5f73e2
+        Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegisterMDI.Location = New System.Drawing.Point(41, 457)
         Me.btnRegisterMDI.Name = "btnRegisterMDI"
-        Me.btnRegisterMDI.Size = New System.Drawing.Size(102, 57)
+        Me.btnRegisterMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnRegisterMDI.TabIndex = 11
         Me.btnRegisterMDI.Text = "Register"
         Me.btnRegisterMDI.UseVisualStyleBackColor = True
         '
         'btnCustomersMDI
         '
-        Me.btnCustomersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCustomersMDI.Location = New System.Drawing.Point(12, 280)
+        Me.btnCustomersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCustomersMDI.Location = New System.Drawing.Point(41, 192)
         Me.btnCustomersMDI.Name = "btnCustomersMDI"
-        Me.btnCustomersMDI.Size = New System.Drawing.Size(102, 52)
+        Me.btnCustomersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnCustomersMDI.TabIndex = 13
         Me.btnCustomersMDI.Text = "Customers"
         Me.btnCustomersMDI.UseVisualStyleBackColor = True
         '
         'btnSuppliersMDI
         '
-        Me.btnSuppliersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSuppliersMDI.Location = New System.Drawing.Point(12, 202)
+        Me.btnSuppliersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSuppliersMDI.Location = New System.Drawing.Point(41, 370)
         Me.btnSuppliersMDI.Name = "btnSuppliersMDI"
-        Me.btnSuppliersMDI.Size = New System.Drawing.Size(102, 54)
+        Me.btnSuppliersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnSuppliersMDI.TabIndex = 14
         Me.btnSuppliersMDI.Text = "Suppliers"
         Me.btnSuppliersMDI.UseVisualStyleBackColor = True
+        '
+        'btnOdersMDI
+        '
+        Me.btnOdersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOdersMDI.Location = New System.Drawing.Point(41, 280)
+        Me.btnOdersMDI.Name = "btnOdersMDI"
+        Me.btnOdersMDI.Size = New System.Drawing.Size(132, 52)
+        Me.btnOdersMDI.TabIndex = 16
+        Me.btnOdersMDI.Text = "Oders"
+        Me.btnOdersMDI.UseVisualStyleBackColor = True
         '
         'MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 568)
+        Me.ClientSize = New System.Drawing.Size(886, 631)
+        Me.Controls.Add(Me.btnOdersMDI)
         Me.Controls.Add(Me.btnSuppliersMDI)
         Me.Controls.Add(Me.btnCustomersMDI)
         Me.Controls.Add(Me.btnRegisterMDI)
@@ -97,4 +105,5 @@ Partial Class MDIParent1
     Friend WithEvents btnRegisterMDI As Button
     Friend WithEvents btnCustomersMDI As Button
     Friend WithEvents btnSuppliersMDI As Button
+    Friend WithEvents btnOdersMDI As Button
 End Class

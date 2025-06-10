@@ -47,7 +47,7 @@ Partial Class Products
         '
         'btnUPDATE
         '
-        Me.btnUPDATE.Location = New System.Drawing.Point(225, 460)
+        Me.btnUPDATE.Location = New System.Drawing.Point(215, 460)
         Me.btnUPDATE.Name = "btnUPDATE"
         Me.btnUPDATE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATE.TabIndex = 2
@@ -107,7 +107,7 @@ Partial Class Products
         '
         'btnDELETE
         '
-        Me.btnDELETE.Location = New System.Drawing.Point(306, 460)
+        Me.btnDELETE.Location = New System.Drawing.Point(286, 460)
         Me.btnDELETE.Name = "btnDELETE"
         Me.btnDELETE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETE.TabIndex = 9
@@ -116,7 +116,7 @@ Partial Class Products
         '
         'btnCANCEL
         '
-        Me.btnCANCEL.Location = New System.Drawing.Point(387, 460)
+        Me.btnCANCEL.Location = New System.Drawing.Point(357, 460)
         Me.btnCANCEL.Name = "btnCANCEL"
         Me.btnCANCEL.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCEL.TabIndex = 10
@@ -136,7 +136,7 @@ Partial Class Products
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(259, 9)
+        Me.Label5.Location = New System.Drawing.Point(259, 18)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(122, 31)
         Me.Label5.TabIndex = 13
