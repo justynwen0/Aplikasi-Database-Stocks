@@ -209,7 +209,7 @@ Public Class Suppliers
             .Connection = conn
             .CommandText = sql
             .Parameters.AddWithValue("@nama", Trim(txtNAMA.Text))
-            .Parameters.AddWithValue("@nomor", Trim(txtNAMA.Text))
+            .Parameters.AddWithValue("@nomor", Trim(txtNOTELP.Text))
             .Parameters.AddWithValue("@email", Trim(txtEMAIL.Text))
             .ExecuteNonQuery()
         End With
