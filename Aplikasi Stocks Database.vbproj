@@ -118,6 +118,12 @@
       <DependentUpon>Products.vb</DependentUpon>
     </Compile>
     <Compile Include="UI Database Stocks\Products.vb" />
+    <Compile Include="UI Database Stocks\Purchase.Designer.vb">
+      <DependentUpon>Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Database Stocks\Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI Database Stocks\RegisterPage.Designer.vb">
       <DependentUpon>RegisterPage.vb</DependentUpon>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI Database Stocks\Products.resx">
       <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Database Stocks\Purchase.resx">
+      <DependentUpon>Purchase.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Database Stocks\RegisterPage.resx">
       <DependentUpon>RegisterPage.vb</DependentUpon>

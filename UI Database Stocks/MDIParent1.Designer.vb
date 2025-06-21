@@ -30,6 +30,7 @@ Partial Class MDIParent1
         Me.btnCustomersMDI = New System.Windows.Forms.Button()
         Me.btnSuppliersMDI = New System.Windows.Forms.Button()
         Me.btnOrdersMDI = New System.Windows.Forms.Button()
+        Me.btnPurchaseMDI = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnProductsMDI
@@ -82,11 +83,22 @@ Partial Class MDIParent1
         Me.btnOrdersMDI.Text = "Orders"
         Me.btnOrdersMDI.UseVisualStyleBackColor = True
         '
+        'btnPurchaseMDI
+        '
+        Me.btnPurchaseMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPurchaseMDI.Location = New System.Drawing.Point(12, 378)
+        Me.btnPurchaseMDI.Name = "btnPurchaseMDI"
+        Me.btnPurchaseMDI.Size = New System.Drawing.Size(102, 59)
+        Me.btnPurchaseMDI.TabIndex = 18
+        Me.btnPurchaseMDI.Text = "Purchase"
+        Me.btnPurchaseMDI.UseVisualStyleBackColor = True
+        '
         'MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(797, 568)
+        Me.Controls.Add(Me.btnPurchaseMDI)
         Me.Controls.Add(Me.btnOrdersMDI)
         Me.Controls.Add(Me.btnSuppliersMDI)
         Me.Controls.Add(Me.btnCustomersMDI)
@@ -106,4 +118,5 @@ Partial Class MDIParent1
     Friend WithEvents btnCustomersMDI As Button
     Friend WithEvents btnSuppliersMDI As Button
     Friend WithEvents btnOrdersMDI As Button
+    Friend WithEvents btnPurchaseMDI As Button
 End Class

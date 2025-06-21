@@ -81,6 +81,12 @@ Public Class Orders
 
     Private Sub cmbPRODUCTS_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPRODUCTS.SelectedIndexChanged
 
+        If cmbPRODUCTS.SelectedItem Is Nothing OrElse cmbPRODUCTS.SelectedIndex = -1 Then
+            txtHARGASATUAN.Clear()
+            txtHARGA.Clear()
+            Exit Sub
+        End If
+
         Dim selectedProduct As String = cmbPRODUCTS.SelectedItem.ToString()
 
         Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
@@ -172,6 +178,7 @@ Public Class Orders
 
             ' Jika semua sukses, commit transaksi
             trans.Commit()
+            ClearOrdersInputs()
             MessageBox.Show("Transaksi berhasil disimpan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         Catch ex As Exception
@@ -203,7 +210,7 @@ Public Class Orders
             End If
         Catch ex As Exception
             MessageBox.Show("Error saat mengambil ID Customer: " & ex.Message)
-            Return -1 ' atau kamu bisa Return 0 sebagai default
+            Return -1
         Finally
             conn.Close()
         End Try
@@ -277,8 +284,10 @@ Public Class Orders
             updateInventoryCmd.ExecuteNonQuery()
 
             trans.Commit()
+            ClearOrdersInputs()
             MessageBox.Show("Data berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
+            ClearOrdersInputs()
             trans?.Rollback()
             MessageBox.Show("Gagal update: " & ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
@@ -326,6 +335,7 @@ Public Class Orders
 
             trans.Commit()
             MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ClearOrdersInputs()
         Catch ex As Exception
             trans?.Rollback()
             MessageBox.Show("Gagal hapus: " & ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -359,9 +369,18 @@ Public Class Orders
             If DateTime.TryParse(tanggalOrder.ToString(), tanggalParsed) Then
                 dtpORDERS.Value = tanggalParsed
             Else
-                dtpORDERS.Value = Date.Today ' fallback jika gagal parse
+                dtpORDERS.Value = Date.Today
             End If
 
         End If
+    End Sub
+
+    Private Sub ClearOrdersInputs()
+        cmbCUSTOMERS.SelectedIndex = -1
+        cmbPRODUCTS.SelectedIndex = -1
+        txtHARGA.Clear()
+        txtHARGASATUAN.Clear()
+        txtQUANTITY.Clear()
+        dtpORDERS.Value = Date.Today
     End Sub
 End Class

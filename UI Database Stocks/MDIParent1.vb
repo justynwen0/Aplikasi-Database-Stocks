@@ -35,4 +35,8 @@ Public Class MDIParent1
     Private Sub btnOrdersMDI_Click(sender As Object, e As EventArgs) Handles btnOrdersMDI.Click
         ShowForm(GetType(Orders))
     End Sub
+
+    Private Sub btnPurchase_Click(sender As Object, e As EventArgs) Handles btnPurchaseMDI.Click
+        ShowForm(GetType(Purchase))
+    End Sub
 End Class
