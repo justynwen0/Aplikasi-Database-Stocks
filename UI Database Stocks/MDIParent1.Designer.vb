@@ -35,8 +35,8 @@ Partial Class MDIParent1
         '
         'btnProductsMDI
         '
-        Me.btnProductsMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductsMDI.Location = New System.Drawing.Point(12, 71)
+        Me.btnProductsMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProductsMDI.Location = New System.Drawing.Point(27, 69)
         Me.btnProductsMDI.Name = "btnProductsMDI"
         Me.btnProductsMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnProductsMDI.TabIndex = 9
@@ -45,8 +45,8 @@ Partial Class MDIParent1
         '
         'btnRegisterMDI
         '
-        Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegisterMDI.Location = New System.Drawing.Point(12, 134)
+        Me.btnRegisterMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegisterMDI.Location = New System.Drawing.Point(27, 521)
         Me.btnRegisterMDI.Name = "btnRegisterMDI"
         Me.btnRegisterMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnRegisterMDI.TabIndex = 11
@@ -55,8 +55,8 @@ Partial Class MDIParent1
         '
         'btnCustomersMDI
         '
-        Me.btnCustomersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCustomersMDI.Location = New System.Drawing.Point(12, 257)
+        Me.btnCustomersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCustomersMDI.Location = New System.Drawing.Point(27, 156)
         Me.btnCustomersMDI.Name = "btnCustomersMDI"
         Me.btnCustomersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnCustomersMDI.TabIndex = 13
@@ -65,19 +65,19 @@ Partial Class MDIParent1
         '
         'btnSuppliersMDI
         '
-        Me.btnSuppliersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSuppliersMDI.Location = New System.Drawing.Point(12, 197)
+        Me.btnSuppliersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSuppliersMDI.Location = New System.Drawing.Point(27, 431)
         Me.btnSuppliersMDI.Name = "btnSuppliersMDI"
         Me.btnSuppliersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnSuppliersMDI.TabIndex = 14
         Me.btnSuppliersMDI.Text = "Suppliers"
         Me.btnSuppliersMDI.UseVisualStyleBackColor = True
         '
-        'btnOdersMDI
+        'btnOrdersMDI
         '
         Me.btnOrdersMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOrdersMDI.Location = New System.Drawing.Point(41, 280)
-        Me.btnOrdersMDI.Name = "btnOdersMDI"
+        Me.btnOrdersMDI.Location = New System.Drawing.Point(27, 247)
+        Me.btnOrdersMDI.Name = "btnOrdersMDI"
         Me.btnOrdersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnOrdersMDI.TabIndex = 16
         Me.btnOrdersMDI.Text = "Oders"
@@ -85,10 +85,10 @@ Partial Class MDIParent1
         '
         'btnPurchaseMDI
         '
-        Me.btnPurchaseMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPurchaseMDI.Location = New System.Drawing.Point(12, 378)
+        Me.btnPurchaseMDI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPurchaseMDI.Location = New System.Drawing.Point(27, 337)
         Me.btnPurchaseMDI.Name = "btnPurchaseMDI"
-        Me.btnPurchaseMDI.Size = New System.Drawing.Size(102, 59)
+        Me.btnPurchaseMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnPurchaseMDI.TabIndex = 18
         Me.btnPurchaseMDI.Text = "Purchase"
         Me.btnPurchaseMDI.UseVisualStyleBackColor = True
@@ -97,7 +97,7 @@ Partial Class MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 568)
+        Me.ClientSize = New System.Drawing.Size(848, 652)
         Me.Controls.Add(Me.btnPurchaseMDI)
         Me.Controls.Add(Me.btnOrdersMDI)
         Me.Controls.Add(Me.btnSuppliersMDI)

@@ -39,7 +39,6 @@ Partial Class Purchase
         Me.btnCANCELPURCHASE = New System.Windows.Forms.Button()
         Me.btnUPDATEPURCHASE = New System.Windows.Forms.Button()
         Me.btnDELETEPURCHASE = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.dgvPURCHASES = New System.Windows.Forms.DataGridView()
         CType(Me.dgvPURCHASES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,7 +47,7 @@ Partial Class Purchase
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(241, 9)
+        Me.Label1.Location = New System.Drawing.Point(258, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(145, 31)
         Me.Label1.TabIndex = 0
@@ -101,60 +100,60 @@ Partial Class Purchase
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 352)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 352)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 20)
+        Me.Label2.Size = New System.Drawing.Size(83, 20)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Suppliers :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 386)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 386)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 20)
+        Me.Label3.Size = New System.Drawing.Size(72, 20)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Product :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(8, 420)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 420)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(171, 20)
+        Me.Label4.Size = New System.Drawing.Size(152, 20)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Tanggal Pembelian :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 496)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(12, 496)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 20)
+        Me.Label5.Size = New System.Drawing.Size(117, 20)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Harga Satuan :"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(8, 457)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 457)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(86, 20)
+        Me.Label6.Size = New System.Drawing.Size(76, 20)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Quantity :"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(8, 531)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(12, 531)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 20)
+        Me.Label7.Size = New System.Drawing.Size(61, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Harga :"
         '
@@ -164,7 +163,7 @@ Partial Class Purchase
         Me.btnINSERTPURCHASE.Name = "btnINSERTPURCHASE"
         Me.btnINSERTPURCHASE.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERTPURCHASE.TabIndex = 13
-        Me.btnINSERTPURCHASE.Text = "&INSERT"
+        Me.btnINSERTPURCHASE.Text = "&Insert"
         Me.btnINSERTPURCHASE.UseVisualStyleBackColor = True
         '
         'btnCANCELPURCHASE
@@ -173,7 +172,7 @@ Partial Class Purchase
         Me.btnCANCELPURCHASE.Name = "btnCANCELPURCHASE"
         Me.btnCANCELPURCHASE.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCELPURCHASE.TabIndex = 14
-        Me.btnCANCELPURCHASE.Text = "&CANCEL"
+        Me.btnCANCELPURCHASE.Text = "&Cancel"
         Me.btnCANCELPURCHASE.UseVisualStyleBackColor = True
         '
         'btnUPDATEPURCHASE
@@ -182,7 +181,7 @@ Partial Class Purchase
         Me.btnUPDATEPURCHASE.Name = "btnUPDATEPURCHASE"
         Me.btnUPDATEPURCHASE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATEPURCHASE.TabIndex = 15
-        Me.btnUPDATEPURCHASE.Text = "&UPDATE"
+        Me.btnUPDATEPURCHASE.Text = "&Update"
         Me.btnUPDATEPURCHASE.UseVisualStyleBackColor = True
         '
         'btnDELETEPURCHASE
@@ -191,18 +190,8 @@ Partial Class Purchase
         Me.btnDELETEPURCHASE.Name = "btnDELETEPURCHASE"
         Me.btnDELETEPURCHASE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETEPURCHASE.TabIndex = 16
-        Me.btnDELETEPURCHASE.Text = "&DELETE"
+        Me.btnDELETEPURCHASE.Text = "&Delete"
         Me.btnDELETEPURCHASE.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(8, 52)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(128, 20)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "List Suppliers :"
         '
         'dgvPURCHASES
         '
@@ -218,7 +207,6 @@ Partial Class Purchase
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(649, 606)
         Me.Controls.Add(Me.dgvPURCHASES)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btnDELETEPURCHASE)
         Me.Controls.Add(Me.btnUPDATEPURCHASE)
         Me.Controls.Add(Me.btnCANCELPURCHASE)
@@ -262,6 +250,5 @@ Partial Class Purchase
     Friend WithEvents btnCANCELPURCHASE As Button
     Friend WithEvents btnUPDATEPURCHASE As Button
     Friend WithEvents btnDELETEPURCHASE As Button
-    Friend WithEvents Label8 As Label
     Friend WithEvents dgvPURCHASES As DataGridView
 End Class

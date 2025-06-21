@@ -48,7 +48,7 @@ Partial Class Orders
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(270, 18)
+        Me.Label1.Location = New System.Drawing.Point(281, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(103, 31)
         Me.Label1.TabIndex = 0
@@ -82,7 +82,7 @@ Partial Class Orders
         Me.btnINSERTORDERS.Name = "btnINSERTORDERS"
         Me.btnINSERTORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERTORDERS.TabIndex = 4
-        Me.btnINSERTORDERS.Text = "&INSERT"
+        Me.btnINSERTORDERS.Text = "&Insert"
         Me.btnINSERTORDERS.UseVisualStyleBackColor = True
         '
         'Label2
@@ -91,47 +91,46 @@ Partial Class Orders
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(12, 43)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 20)
+        Me.Label2.Size = New System.Drawing.Size(0, 20)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "List Order :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 352)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 352)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(96, 20)
+        Me.Label3.Size = New System.Drawing.Size(86, 20)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Customer :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(8, 386)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 386)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 20)
+        Me.Label4.Size = New System.Drawing.Size(72, 20)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Product :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 420)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(12, 420)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(138, 20)
+        Me.Label5.Size = New System.Drawing.Size(122, 20)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Tanggal Order : "
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(8, 526)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 526)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 20)
+        Me.Label6.Size = New System.Drawing.Size(61, 20)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Harga :"
         '
@@ -146,10 +145,10 @@ Partial Class Orders
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(8, 459)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(12, 459)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(86, 20)
+        Me.Label7.Size = New System.Drawing.Size(76, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Quantity :"
         '
@@ -163,10 +162,10 @@ Partial Class Orders
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(8, 491)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(12, 491)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(131, 20)
+        Me.Label8.Size = New System.Drawing.Size(117, 20)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Harga Satuan :"
         '
@@ -183,7 +182,7 @@ Partial Class Orders
         Me.btnUPDATEORDERS.Name = "btnUPDATEORDERS"
         Me.btnUPDATEORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATEORDERS.TabIndex = 16
-        Me.btnUPDATEORDERS.Text = "&UPDATE"
+        Me.btnUPDATEORDERS.Text = "&Update"
         Me.btnUPDATEORDERS.UseVisualStyleBackColor = True
         '
         'btnDELETEORDERS
@@ -192,7 +191,7 @@ Partial Class Orders
         Me.btnDELETEORDERS.Name = "btnDELETEORDERS"
         Me.btnDELETEORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETEORDERS.TabIndex = 17
-        Me.btnDELETEORDERS.Text = "&DELETE"
+        Me.btnDELETEORDERS.Text = "&Delete"
         Me.btnDELETEORDERS.UseVisualStyleBackColor = True
         '
         'btnCANCELORDERS
@@ -201,7 +200,7 @@ Partial Class Orders
         Me.btnCANCELORDERS.Name = "btnCANCELORDERS"
         Me.btnCANCELORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCELORDERS.TabIndex = 18
-        Me.btnCANCELORDERS.Text = "&CANCEL"
+        Me.btnCANCELORDERS.Text = "&Cancel"
         Me.btnCANCELORDERS.UseVisualStyleBackColor = True
         '
         'dgvORDERS

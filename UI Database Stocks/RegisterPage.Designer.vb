@@ -51,11 +51,11 @@ Partial Class RegisterPage
         'LabelRegisterHeader
         '
         Me.LabelRegisterHeader.AutoSize = True
-        Me.LabelRegisterHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelRegisterHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelRegisterHeader.ForeColor = System.Drawing.Color.Black
         Me.LabelRegisterHeader.Location = New System.Drawing.Point(261, 9)
         Me.LabelRegisterHeader.Name = "LabelRegisterHeader"
-        Me.LabelRegisterHeader.Size = New System.Drawing.Size(116, 31)
+        Me.LabelRegisterHeader.Size = New System.Drawing.Size(124, 31)
         Me.LabelRegisterHeader.TabIndex = 11
         Me.LabelRegisterHeader.Text = "Register"
         '

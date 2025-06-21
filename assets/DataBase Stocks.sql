@@ -93,3 +93,4 @@ CREATE TABLE Suppliers_has_Purchase (
     FOREIGN KEY (Suppliers_ID) REFERENCES Suppliers(ID),
     FOREIGN KEY (Purchase_PenjualanBarangID) REFERENCES Purchase(PenjualanBarangID)
 );
+
