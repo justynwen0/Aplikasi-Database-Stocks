@@ -97,12 +97,8 @@ Partial Class MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(797, 568)
         Me.Controls.Add(Me.btnPurchaseMDI)
-=======
-        Me.ClientSize = New System.Drawing.Size(886, 631)
->>>>>>> d7c8a97310d0aae36afbd8ece13186f202a2732c
         Me.Controls.Add(Me.btnOrdersMDI)
         Me.Controls.Add(Me.btnSuppliersMDI)
         Me.Controls.Add(Me.btnCustomersMDI)
