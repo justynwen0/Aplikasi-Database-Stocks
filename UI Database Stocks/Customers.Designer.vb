@@ -24,7 +24,6 @@ Partial Class Customers
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNAMACUSTOMERS = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -41,10 +40,10 @@ Partial Class Customers
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(241, 9)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(248, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 31)
+        Me.Label1.Size = New System.Drawing.Size(146, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Customers"
         '
@@ -55,43 +54,33 @@ Partial Class Customers
         Me.txtNAMACUSTOMERS.Size = New System.Drawing.Size(167, 20)
         Me.txtNAMACUSTOMERS.TabIndex = 2
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 52)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(139, 20)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "List Customers :"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(6, 345)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 20)
+        Me.Label3.Size = New System.Drawing.Size(59, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Nama :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(8, 384)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 20)
+        Me.Label4.Size = New System.Drawing.Size(75, 20)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "No. Telp :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(8, 422)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 20)
+        Me.Label5.Size = New System.Drawing.Size(56, 20)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Email :"
         '
@@ -119,38 +108,38 @@ Partial Class Customers
         '
         'btnINSERTCUSTOMERS
         '
-        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(34, 462)
+        Me.btnINSERTCUSTOMERS.Location = New System.Drawing.Point(144, 460)
         Me.btnINSERTCUSTOMERS.Name = "btnINSERTCUSTOMERS"
         Me.btnINSERTCUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERTCUSTOMERS.TabIndex = 14
-        Me.btnINSERTCUSTOMERS.Text = "&INSERT"
+        Me.btnINSERTCUSTOMERS.Text = "&Insert"
         Me.btnINSERTCUSTOMERS.UseVisualStyleBackColor = True
         '
         'btnUPDATECUSTOMERS
         '
-        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(105, 462)
+        Me.btnUPDATECUSTOMERS.Location = New System.Drawing.Point(215, 460)
         Me.btnUPDATECUSTOMERS.Name = "btnUPDATECUSTOMERS"
         Me.btnUPDATECUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATECUSTOMERS.TabIndex = 15
-        Me.btnUPDATECUSTOMERS.Text = "&UPDATE"
+        Me.btnUPDATECUSTOMERS.Text = "&Update"
         Me.btnUPDATECUSTOMERS.UseVisualStyleBackColor = True
         '
         'btnDELETECUSTOMERS
         '
-        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(176, 462)
+        Me.btnDELETECUSTOMERS.Location = New System.Drawing.Point(286, 460)
         Me.btnDELETECUSTOMERS.Name = "btnDELETECUSTOMERS"
         Me.btnDELETECUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETECUSTOMERS.TabIndex = 16
-        Me.btnDELETECUSTOMERS.Text = "&DELETE"
+        Me.btnDELETECUSTOMERS.Text = "&Delete"
         Me.btnDELETECUSTOMERS.UseVisualStyleBackColor = True
         '
         'btnCANCELCUSTOMERS
         '
-        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(247, 462)
+        Me.btnCANCELCUSTOMERS.Location = New System.Drawing.Point(357, 460)
         Me.btnCANCELCUSTOMERS.Name = "btnCANCELCUSTOMERS"
         Me.btnCANCELCUSTOMERS.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCELCUSTOMERS.TabIndex = 17
-        Me.btnCANCELCUSTOMERS.Text = "&CANCEL"
+        Me.btnCANCELCUSTOMERS.Text = "&Cancel"
         Me.btnCANCELCUSTOMERS.UseVisualStyleBackColor = True
         '
         'Customers
@@ -168,7 +157,6 @@ Partial Class Customers
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNAMACUSTOMERS)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Customers"
@@ -182,7 +170,6 @@ Partial Class Customers
 
     Friend WithEvents Label1 As Label
     Friend WithEvents txtNAMACUSTOMERS As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label

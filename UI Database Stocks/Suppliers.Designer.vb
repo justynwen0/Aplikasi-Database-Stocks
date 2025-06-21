@@ -33,7 +33,6 @@ Partial Class Suppliers
         Me.btnDELETE = New System.Windows.Forms.Button()
         Me.btnCANCEL = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.dgvSUPPLIERS = New System.Windows.Forms.DataGridView()
         CType(Me.dgvSUPPLIERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,20 +40,20 @@ Partial Class Suppliers
         'btnINSERT
         '
         Me.btnINSERT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnINSERT.Location = New System.Drawing.Point(34, 462)
+        Me.btnINSERT.Location = New System.Drawing.Point(147, 460)
         Me.btnINSERT.Name = "btnINSERT"
         Me.btnINSERT.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERT.TabIndex = 0
-        Me.btnINSERT.Text = "&INSERT"
+        Me.btnINSERT.Text = "&Insert"
         Me.btnINSERT.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(6, 345)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 20)
+        Me.Label1.Size = New System.Drawing.Size(59, 20)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nama :"
         '
@@ -69,20 +68,20 @@ Partial Class Suppliers
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(8, 384)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.Size = New System.Drawing.Size(75, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "No. Telp :"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(8, 422)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 20)
+        Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Email :"
         '
@@ -104,50 +103,40 @@ Partial Class Suppliers
         '
         'btnUPDATE
         '
-        Me.btnUPDATE.Location = New System.Drawing.Point(105, 462)
+        Me.btnUPDATE.Location = New System.Drawing.Point(218, 460)
         Me.btnUPDATE.Name = "btnUPDATE"
         Me.btnUPDATE.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATE.TabIndex = 7
-        Me.btnUPDATE.Text = "&UPDATE"
+        Me.btnUPDATE.Text = "&Update"
         Me.btnUPDATE.UseVisualStyleBackColor = True
         '
         'btnDELETE
         '
-        Me.btnDELETE.Location = New System.Drawing.Point(176, 462)
+        Me.btnDELETE.Location = New System.Drawing.Point(289, 460)
         Me.btnDELETE.Name = "btnDELETE"
         Me.btnDELETE.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETE.TabIndex = 8
-        Me.btnDELETE.Text = "&DELETE"
+        Me.btnDELETE.Text = "&Delete"
         Me.btnDELETE.UseVisualStyleBackColor = True
         '
         'btnCANCEL
         '
-        Me.btnCANCEL.Location = New System.Drawing.Point(247, 462)
+        Me.btnCANCEL.Location = New System.Drawing.Point(360, 460)
         Me.btnCANCEL.Name = "btnCANCEL"
         Me.btnCANCEL.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCEL.TabIndex = 9
-        Me.btnCANCEL.Text = "&CANCEL"
+        Me.btnCANCEL.Text = "&Cancel"
         Me.btnCANCEL.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(241, 9)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(258, 23)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(136, 31)
+        Me.Label4.Size = New System.Drawing.Size(127, 31)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Suppliers"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 52)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(128, 20)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "List Suppliers :"
         '
         'dgvSUPPLIERS
         '
@@ -163,7 +152,6 @@ Partial Class Suppliers
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(649, 495)
         Me.Controls.Add(Me.dgvSUPPLIERS)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnCANCEL)
         Me.Controls.Add(Me.btnDELETE)
@@ -195,6 +183,5 @@ Partial Class Suppliers
     Friend WithEvents btnDELETE As Button
     Friend WithEvents btnCANCEL As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents dgvSUPPLIERS As DataGridView
 End Class

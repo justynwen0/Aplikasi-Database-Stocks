@@ -117,7 +117,9 @@
     <Compile Include="UI Database Stocks\Products.Designer.vb">
       <DependentUpon>Products.vb</DependentUpon>
     </Compile>
-    <Compile Include="UI Database Stocks\Products.vb" />
+    <Compile Include="UI Database Stocks\Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI Database Stocks\Purchase.Designer.vb">
       <DependentUpon>Purchase.vb</DependentUpon>
     </Compile>
