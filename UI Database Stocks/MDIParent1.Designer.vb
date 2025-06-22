@@ -80,7 +80,7 @@ Partial Class MDIParent1
         Me.btnOrdersMDI.Name = "btnOrdersMDI"
         Me.btnOrdersMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnOrdersMDI.TabIndex = 16
-        Me.btnOrdersMDI.Text = "Oders"
+        Me.btnOrdersMDI.Text = "Orders"
         Me.btnOrdersMDI.UseVisualStyleBackColor = True
         '
         'btnPurchaseMDI
@@ -90,7 +90,7 @@ Partial Class MDIParent1
         Me.btnPurchaseMDI.Name = "btnPurchaseMDI"
         Me.btnPurchaseMDI.Size = New System.Drawing.Size(132, 52)
         Me.btnPurchaseMDI.TabIndex = 18
-        Me.btnPurchaseMDI.Text = "Purchase"
+        Me.btnPurchaseMDI.Text = "Purchases"
         Me.btnPurchaseMDI.UseVisualStyleBackColor = True
         '
         'MDIParent1
