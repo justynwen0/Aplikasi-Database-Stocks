@@ -148,3 +148,9 @@ Insert Into Suppliers
     ,('Vinny','087645328901','vinny@gmail.com')
     ,('Edward','087545671920','edward@gmail.com')
     ,('Mita','0875458912098','mita@gmail.com')
+
+Insert Into Users
+(Nama,Email,Password)
+
+    values
+    ('admin','admin@gmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
