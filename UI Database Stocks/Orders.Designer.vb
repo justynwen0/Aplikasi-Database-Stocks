@@ -33,7 +33,6 @@ Partial Class Orders
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cmbPRODUCTS = New System.Windows.Forms.ComboBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.txtHARGASATUAN = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtHARGA = New System.Windows.Forms.TextBox()
@@ -42,7 +41,8 @@ Partial Class Orders
         Me.btnCANCELORDERS = New System.Windows.Forms.Button()
         Me.dgvORDERS = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtBRANDORDERS = New System.Windows.Forms.TextBox()
+        Me.txtMerekBarangOrders = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.dgvORDERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,21 +66,21 @@ Partial Class Orders
         '
         'dtpORDERS
         '
-        Me.dtpORDERS.Location = New System.Drawing.Point(152, 419)
+        Me.dtpORDERS.Location = New System.Drawing.Point(152, 456)
         Me.dtpORDERS.Name = "dtpORDERS"
         Me.dtpORDERS.Size = New System.Drawing.Size(200, 20)
         Me.dtpORDERS.TabIndex = 2
         '
         'txtQUANTITY
         '
-        Me.txtQUANTITY.Location = New System.Drawing.Point(152, 471)
+        Me.txtQUANTITY.Location = New System.Drawing.Point(152, 492)
         Me.txtQUANTITY.Name = "txtQUANTITY"
         Me.txtQUANTITY.Size = New System.Drawing.Size(200, 20)
         Me.txtQUANTITY.TabIndex = 3
         '
         'btnINSERTORDERS
         '
-        Me.btnINSERTORDERS.Location = New System.Drawing.Point(74, 569)
+        Me.btnINSERTORDERS.Location = New System.Drawing.Point(75, 595)
         Me.btnINSERTORDERS.Name = "btnINSERTORDERS"
         Me.btnINSERTORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnINSERTORDERS.TabIndex = 4
@@ -120,7 +120,7 @@ Partial Class Orders
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 420)
+        Me.Label5.Location = New System.Drawing.Point(12, 456)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(122, 20)
         Me.Label5.TabIndex = 9
@@ -130,7 +130,7 @@ Partial Class Orders
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 523)
+        Me.Label6.Location = New System.Drawing.Point(12, 559)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 20)
         Me.Label6.TabIndex = 10
@@ -144,19 +144,9 @@ Partial Class Orders
         Me.cmbPRODUCTS.Size = New System.Drawing.Size(200, 21)
         Me.cmbPRODUCTS.TabIndex = 11
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 471)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 20)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Quantity :"
-        '
         'txtHARGASATUAN
         '
-        Me.txtHARGASATUAN.Location = New System.Drawing.Point(152, 497)
+        Me.txtHARGASATUAN.Location = New System.Drawing.Point(152, 527)
         Me.txtHARGASATUAN.Name = "txtHARGASATUAN"
         Me.txtHARGASATUAN.Size = New System.Drawing.Size(200, 20)
         Me.txtHARGASATUAN.TabIndex = 13
@@ -165,7 +155,7 @@ Partial Class Orders
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(12, 497)
+        Me.Label8.Location = New System.Drawing.Point(12, 527)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(117, 20)
         Me.Label8.TabIndex = 14
@@ -173,14 +163,14 @@ Partial Class Orders
         '
         'txtHARGA
         '
-        Me.txtHARGA.Location = New System.Drawing.Point(152, 523)
+        Me.txtHARGA.Location = New System.Drawing.Point(152, 559)
         Me.txtHARGA.Name = "txtHARGA"
         Me.txtHARGA.Size = New System.Drawing.Size(200, 20)
         Me.txtHARGA.TabIndex = 15
         '
         'btnUPDATEORDERS
         '
-        Me.btnUPDATEORDERS.Location = New System.Drawing.Point(145, 569)
+        Me.btnUPDATEORDERS.Location = New System.Drawing.Point(146, 595)
         Me.btnUPDATEORDERS.Name = "btnUPDATEORDERS"
         Me.btnUPDATEORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnUPDATEORDERS.TabIndex = 16
@@ -189,7 +179,7 @@ Partial Class Orders
         '
         'btnDELETEORDERS
         '
-        Me.btnDELETEORDERS.Location = New System.Drawing.Point(216, 569)
+        Me.btnDELETEORDERS.Location = New System.Drawing.Point(217, 595)
         Me.btnDELETEORDERS.Name = "btnDELETEORDERS"
         Me.btnDELETEORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnDELETEORDERS.TabIndex = 17
@@ -198,7 +188,7 @@ Partial Class Orders
         '
         'btnCANCELORDERS
         '
-        Me.btnCANCELORDERS.Location = New System.Drawing.Point(287, 569)
+        Me.btnCANCELORDERS.Location = New System.Drawing.Point(288, 595)
         Me.btnCANCELORDERS.Name = "btnCANCELORDERS"
         Me.btnCANCELORDERS.Size = New System.Drawing.Size(65, 23)
         Me.btnCANCELORDERS.TabIndex = 18
@@ -217,25 +207,35 @@ Partial Class Orders
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(12, 445)
+        Me.Label9.Location = New System.Drawing.Point(12, 421)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(60, 20)
         Me.Label9.TabIndex = 20
         Me.Label9.Text = "Brand :"
         '
-        'txtBRANDORDERS
+        'txtMerekBarangOrders
         '
-        Me.txtBRANDORDERS.Location = New System.Drawing.Point(152, 445)
-        Me.txtBRANDORDERS.Name = "txtBRANDORDERS"
-        Me.txtBRANDORDERS.Size = New System.Drawing.Size(200, 20)
-        Me.txtBRANDORDERS.TabIndex = 21
+        Me.txtMerekBarangOrders.Location = New System.Drawing.Point(152, 421)
+        Me.txtMerekBarangOrders.Name = "txtMerekBarangOrders"
+        Me.txtMerekBarangOrders.Size = New System.Drawing.Size(200, 20)
+        Me.txtMerekBarangOrders.TabIndex = 21
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(12, 492)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 20)
+        Me.Label7.TabIndex = 12
+        Me.Label7.Text = "Quantity :"
         '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(649, 606)
-        Me.Controls.Add(Me.txtBRANDORDERS)
+        Me.ClientSize = New System.Drawing.Size(649, 630)
+        Me.Controls.Add(Me.txtMerekBarangOrders)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.dgvORDERS)
         Me.Controls.Add(Me.btnCANCELORDERS)
@@ -276,7 +276,6 @@ Partial Class Orders
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents cmbPRODUCTS As ComboBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents txtHARGASATUAN As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents txtHARGA As TextBox
@@ -285,5 +284,6 @@ Partial Class Orders
     Friend WithEvents btnCANCELORDERS As Button
     Friend WithEvents dgvORDERS As DataGridView
     Friend WithEvents Label9 As Label
-    Friend WithEvents txtBRANDORDERS As TextBox
+    Friend WithEvents txtMerekBarangOrders As TextBox
+    Friend WithEvents Label7 As Label
 End Class

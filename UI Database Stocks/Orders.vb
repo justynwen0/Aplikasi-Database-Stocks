@@ -6,7 +6,7 @@ Public Class Orders
         LoadProductsToComboBox()
         txtHARGASATUAN.ReadOnly = True
         txtHARGA.ReadOnly = True
-        txtBRANDORDERS.ReadOnly = True
+        txtMerekBarangOrders.ReadOnly = True
 
         dgvORDERS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvORDERS.SelectionMode = DataGridViewSelectionMode.FullRowSelect
@@ -85,14 +85,14 @@ Public Class Orders
         If cmbPRODUCTS.SelectedItem Is Nothing OrElse cmbPRODUCTS.SelectedIndex = -1 Then
             txtHARGASATUAN.Clear()
             txtHARGA.Clear()
-            txtBRANDORDERS.Clear()
+            txtMerekBarangOrders.Clear()
             Exit Sub
         End If
 
         Dim selectedProduct As String = cmbPRODUCTS.SelectedItem.ToString()
 
         Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
-        Dim cmd As New SqlCommand("SELECT Harga, Brand FROM Products WHERE NamaBarang = @NamaBarang", conn)
+        Dim cmd As New SqlCommand("SELECT Harga, MerekBarang FROM Products WHERE NamaBarang = @NamaBarang", conn)
         cmd.Parameters.AddWithValue("@NamaBarang", selectedProduct)
 
         Try
@@ -100,7 +100,7 @@ Public Class Orders
             Dim reader As SqlDataReader = cmd.ExecuteReader()
             If reader.Read() Then
                 txtHARGASATUAN.Text = reader("Harga").ToString()
-                txtBRANDORDERS.Text = reader("Brand").ToString()
+                txtMerekBarangOrders.Text = reader("MerekBarang").ToString()
                 HitungTotalHarga()
             Else
                 MessageBox.Show("Produk tidak ditemukan di database.")
@@ -353,7 +353,7 @@ Public Class Orders
         txtQUANTITY.Text = ""
         cmbCUSTOMERS.Text = ""
         cmbPRODUCTS.Text = ""
-        txtBRANDORDERS.Text = ""
+        txtMerekBarangOrders.Text = ""
     End Sub
 
     Private Sub dgvORDERS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvORDERS.CellClick
@@ -384,6 +384,6 @@ Public Class Orders
         txtHARGASATUAN.Clear()
         txtQUANTITY.Clear()
         dtpORDERS.Value = Date.Today
-        txtBRANDORDERS.Clear()
+        txtMerekBarangOrders.Clear()
     End Sub
 End Class
