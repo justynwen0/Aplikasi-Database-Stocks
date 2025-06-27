@@ -41,6 +41,8 @@ Partial Class Orders
         Me.btnDELETEORDERS = New System.Windows.Forms.Button()
         Me.btnCANCELORDERS = New System.Windows.Forms.Button()
         Me.dgvORDERS = New System.Windows.Forms.DataGridView()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtBRANDORDERS = New System.Windows.Forms.TextBox()
         CType(Me.dgvORDERS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,7 +73,7 @@ Partial Class Orders
         '
         'txtQUANTITY
         '
-        Me.txtQUANTITY.Location = New System.Drawing.Point(152, 459)
+        Me.txtQUANTITY.Location = New System.Drawing.Point(152, 471)
         Me.txtQUANTITY.Name = "txtQUANTITY"
         Me.txtQUANTITY.Size = New System.Drawing.Size(200, 20)
         Me.txtQUANTITY.TabIndex = 3
@@ -128,7 +130,7 @@ Partial Class Orders
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 526)
+        Me.Label6.Location = New System.Drawing.Point(12, 523)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 20)
         Me.Label6.TabIndex = 10
@@ -146,7 +148,7 @@ Partial Class Orders
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 459)
+        Me.Label7.Location = New System.Drawing.Point(12, 471)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(76, 20)
         Me.Label7.TabIndex = 12
@@ -154,7 +156,7 @@ Partial Class Orders
         '
         'txtHARGASATUAN
         '
-        Me.txtHARGASATUAN.Location = New System.Drawing.Point(152, 491)
+        Me.txtHARGASATUAN.Location = New System.Drawing.Point(152, 497)
         Me.txtHARGASATUAN.Name = "txtHARGASATUAN"
         Me.txtHARGASATUAN.Size = New System.Drawing.Size(200, 20)
         Me.txtHARGASATUAN.TabIndex = 13
@@ -163,7 +165,7 @@ Partial Class Orders
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(12, 491)
+        Me.Label8.Location = New System.Drawing.Point(12, 497)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(117, 20)
         Me.Label8.TabIndex = 14
@@ -171,7 +173,7 @@ Partial Class Orders
         '
         'txtHARGA
         '
-        Me.txtHARGA.Location = New System.Drawing.Point(152, 526)
+        Me.txtHARGA.Location = New System.Drawing.Point(152, 523)
         Me.txtHARGA.Name = "txtHARGA"
         Me.txtHARGA.Size = New System.Drawing.Size(200, 20)
         Me.txtHARGA.TabIndex = 15
@@ -211,11 +213,30 @@ Partial Class Orders
         Me.dgvORDERS.Size = New System.Drawing.Size(618, 257)
         Me.dgvORDERS.TabIndex = 19
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(12, 445)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(60, 20)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Brand :"
+        '
+        'txtBRANDORDERS
+        '
+        Me.txtBRANDORDERS.Location = New System.Drawing.Point(152, 445)
+        Me.txtBRANDORDERS.Name = "txtBRANDORDERS"
+        Me.txtBRANDORDERS.Size = New System.Drawing.Size(200, 20)
+        Me.txtBRANDORDERS.TabIndex = 21
+        '
         'Orders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(649, 606)
+        Me.Controls.Add(Me.txtBRANDORDERS)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.dgvORDERS)
         Me.Controls.Add(Me.btnCANCELORDERS)
         Me.Controls.Add(Me.btnDELETEORDERS)
@@ -263,4 +284,6 @@ Partial Class Orders
     Friend WithEvents btnDELETEORDERS As Button
     Friend WithEvents btnCANCELORDERS As Button
     Friend WithEvents dgvORDERS As DataGridView
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtBRANDORDERS As TextBox
 End Class

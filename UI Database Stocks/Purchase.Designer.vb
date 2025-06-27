@@ -40,6 +40,8 @@ Partial Class Purchase
         Me.btnUPDATEPURCHASE = New System.Windows.Forms.Button()
         Me.btnDELETEPURCHASE = New System.Windows.Forms.Button()
         Me.dgvPURCHASES = New System.Windows.Forms.DataGridView()
+        Me.txtBRANDPURCHASE = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.dgvPURCHASES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,7 +65,7 @@ Partial Class Purchase
         '
         'txtQUANTITYPURCHASE
         '
-        Me.txtQUANTITYPURCHASE.Location = New System.Drawing.Point(185, 459)
+        Me.txtQUANTITYPURCHASE.Location = New System.Drawing.Point(185, 470)
         Me.txtQUANTITYPURCHASE.Name = "txtQUANTITYPURCHASE"
         Me.txtQUANTITYPURCHASE.Size = New System.Drawing.Size(200, 20)
         Me.txtQUANTITYPURCHASE.TabIndex = 2
@@ -71,14 +73,14 @@ Partial Class Purchase
         'cmbPRODUCTPURCHASE
         '
         Me.cmbPRODUCTPURCHASE.FormattingEnabled = True
-        Me.cmbPRODUCTPURCHASE.Location = New System.Drawing.Point(185, 385)
+        Me.cmbPRODUCTPURCHASE.Location = New System.Drawing.Point(185, 388)
         Me.cmbPRODUCTPURCHASE.Name = "cmbPRODUCTPURCHASE"
         Me.cmbPRODUCTPURCHASE.Size = New System.Drawing.Size(200, 21)
         Me.cmbPRODUCTPURCHASE.TabIndex = 3
         '
         'txtHARGAPURCHASE
         '
-        Me.txtHARGAPURCHASE.Location = New System.Drawing.Point(185, 531)
+        Me.txtHARGAPURCHASE.Location = New System.Drawing.Point(185, 522)
         Me.txtHARGAPURCHASE.Name = "txtHARGAPURCHASE"
         Me.txtHARGAPURCHASE.Size = New System.Drawing.Size(200, 20)
         Me.txtHARGAPURCHASE.TabIndex = 4
@@ -101,7 +103,7 @@ Partial Class Purchase
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 352)
+        Me.Label2.Location = New System.Drawing.Point(16, 355)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 20)
         Me.Label2.TabIndex = 7
@@ -111,7 +113,7 @@ Partial Class Purchase
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 386)
+        Me.Label3.Location = New System.Drawing.Point(16, 389)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 20)
         Me.Label3.TabIndex = 8
@@ -121,7 +123,7 @@ Partial Class Purchase
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 420)
+        Me.Label4.Location = New System.Drawing.Point(16, 418)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(152, 20)
         Me.Label4.TabIndex = 9
@@ -131,7 +133,7 @@ Partial Class Purchase
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 496)
+        Me.Label5.Location = New System.Drawing.Point(16, 496)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(117, 20)
         Me.Label5.TabIndex = 10
@@ -141,7 +143,7 @@ Partial Class Purchase
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 457)
+        Me.Label6.Location = New System.Drawing.Point(16, 470)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(76, 20)
         Me.Label6.TabIndex = 11
@@ -151,7 +153,7 @@ Partial Class Purchase
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 531)
+        Me.Label7.Location = New System.Drawing.Point(16, 522)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 20)
         Me.Label7.TabIndex = 12
@@ -201,11 +203,31 @@ Partial Class Purchase
         Me.dgvPURCHASES.Size = New System.Drawing.Size(618, 257)
         Me.dgvPURCHASES.TabIndex = 18
         '
+        'txtBRANDPURCHASE
+        '
+        Me.txtBRANDPURCHASE.Location = New System.Drawing.Point(185, 444)
+        Me.txtBRANDPURCHASE.Name = "txtBRANDPURCHASE"
+        Me.txtBRANDPURCHASE.ReadOnly = True
+        Me.txtBRANDPURCHASE.Size = New System.Drawing.Size(200, 20)
+        Me.txtBRANDPURCHASE.TabIndex = 19
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(16, 444)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(60, 20)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Brand :"
+        '
         'Purchase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(649, 606)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.txtBRANDPURCHASE)
         Me.Controls.Add(Me.dgvPURCHASES)
         Me.Controls.Add(Me.btnDELETEPURCHASE)
         Me.Controls.Add(Me.btnUPDATEPURCHASE)
@@ -251,4 +273,6 @@ Partial Class Purchase
     Friend WithEvents btnUPDATEPURCHASE As Button
     Friend WithEvents btnDELETEPURCHASE As Button
     Friend WithEvents dgvPURCHASES As DataGridView
+    Friend WithEvents txtBRANDPURCHASE As TextBox
+    Friend WithEvents Label8 As Label
 End Class

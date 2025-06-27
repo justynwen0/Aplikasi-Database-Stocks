@@ -6,6 +6,7 @@ Public Class Orders
         LoadProductsToComboBox()
         txtHARGASATUAN.ReadOnly = True
         txtHARGA.ReadOnly = True
+        txtBRANDORDERS.ReadOnly = True
 
         dgvORDERS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvORDERS.SelectionMode = DataGridViewSelectionMode.FullRowSelect
@@ -84,28 +85,28 @@ Public Class Orders
         If cmbPRODUCTS.SelectedItem Is Nothing OrElse cmbPRODUCTS.SelectedIndex = -1 Then
             txtHARGASATUAN.Clear()
             txtHARGA.Clear()
+            txtBRANDORDERS.Clear()
             Exit Sub
         End If
 
         Dim selectedProduct As String = cmbPRODUCTS.SelectedItem.ToString()
 
         Dim conn As New SqlConnection(DatabaseHelper.GetConnectionString())
-        Dim cmd As New SqlCommand("SELECT Harga FROM Products WHERE NamaBarang = @NamaBarang", conn)
+        Dim cmd As New SqlCommand("SELECT Harga, Brand FROM Products WHERE NamaBarang = @NamaBarang", conn)
         cmd.Parameters.AddWithValue("@NamaBarang", selectedProduct)
 
         Try
             conn.Open()
-            Dim result As Object = cmd.ExecuteScalar()
-
-            If result IsNot Nothing Then
-                Dim hargaSatuan As Integer = Convert.ToInt32(result)
-                txtHARGASATUAN.Text = hargaSatuan.ToString()
+            Dim reader As SqlDataReader = cmd.ExecuteReader()
+            If reader.Read() Then
+                txtHARGASATUAN.Text = reader("Harga").ToString()
+                txtBRANDORDERS.Text = reader("Brand").ToString()
                 HitungTotalHarga()
             Else
-                MessageBox.Show("Harga produk tidak ditemukan di database.")
+                MessageBox.Show("Produk tidak ditemukan di database.")
             End If
         Catch ex As Exception
-            MessageBox.Show("Error mengambil harga: " & ex.Message)
+            MessageBox.Show("Error mengambil data produk: " & ex.Message)
         Finally
             conn.Close()
         End Try
@@ -352,6 +353,7 @@ Public Class Orders
         txtQUANTITY.Text = ""
         cmbCUSTOMERS.Text = ""
         cmbPRODUCTS.Text = ""
+        txtBRANDORDERS.Text = ""
     End Sub
 
     Private Sub dgvORDERS_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvORDERS.CellClick
@@ -382,5 +384,6 @@ Public Class Orders
         txtHARGASATUAN.Clear()
         txtQUANTITY.Clear()
         dtpORDERS.Value = Date.Today
+        txtBRANDORDERS.Clear()
     End Sub
 End Class

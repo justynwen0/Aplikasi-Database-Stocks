@@ -45,6 +45,7 @@ Public Class Purchase
         LoadPurchases()
         txtHARGASATUANPURCHASE.ReadOnly = True
         txtHARGAPURCHASE.ReadOnly = True
+        txtBRANDPURCHASE.ReadOnly = True
     End Sub
 
     Private Sub LoadSuppliers()
@@ -78,6 +79,7 @@ Public Class Purchase
         If cmbPRODUCTPURCHASE.SelectedItem Is Nothing OrElse cmbPRODUCTPURCHASE.SelectedIndex = -1 Then
             txtHARGASATUANPURCHASE.Clear()
             txtHARGAPURCHASE.Clear()
+            txtBRANDPURCHASE.Clear()
             Exit Sub
         End If
 
@@ -86,10 +88,11 @@ Public Class Purchase
         Dim connStr = DatabaseHelper.GetConnectionString()
         Dim dt = DatabaseHelper.ExecuteDynamicSQL("select", "Products",
         New Dictionary(Of String, Object) From {{"NamaBarang", selected}},
-        connStr, "NamaBarang = @NamaBarang", New List(Of String) From {"Harga"})
+        connStr, "NamaBarang = @NamaBarang", New List(Of String) From {"Harga", "Brand"})
 
         If CType(dt, DataTable).Rows.Count > 0 Then
             txtHARGASATUANPURCHASE.Text = dt.Rows(0)("Harga").ToString()
+            txtBRANDPURCHASE.Text = dt.rows(0)("Brand").ToString()
             HitungTotalHarga()
         End If
     End Sub
@@ -342,6 +345,7 @@ Public Class Purchase
         txtQUANTITYPURCHASE.Text = ""
         cmbSUPPLIERS.Text = ""
         cmbPRODUCTPURCHASE.Text = ""
+        txtBRANDPURCHASE.Text = ""
     End Sub
 
     Private Sub dgvPURCHASES_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPURCHASES.CellClick
@@ -372,6 +376,7 @@ Public Class Purchase
         txtHARGASATUANPURCHASE.Clear()
         txtQUANTITYPURCHASE.Clear()
         dtpPURCHASE.Value = Date.Today
+        txtBRANDPURCHASE.Clear()
     End Sub
 
 End Class
